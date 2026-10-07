@@ -1,0 +1,309 @@
+{
+  "type": "Collection",
+  "id": "recreation-trails",
+  "stac_version": "1.1.0",
+  "description": "19,936 recreation trail and feature lines managed by Recreation Sites and Trails BC. Published by Recreation Sites and Trails BC (Province of British Columbia) as [Recreation Line](https://catalogue.data.gov.bc.ca/dataset/recreation-line) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/recreation-line",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./recreation-trails.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "recreation-trails"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "LineString",
+  "geoparquet:feature_count": 19936,
+  "table:row_count": 19936,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "RMF_SKEY",
+      "type": "int32",
+      "description": "The unique identifier (called an SKEY) for the Recreation Map Feature."
+    },
+    {
+      "name": "FOREST_FILE_ID",
+      "type": "string",
+      "description": "An identifier assigned to the recreation file, e.g., REC16098."
+    },
+    {
+      "name": "SECTION_ID",
+      "type": "string",
+      "description": "An identifier assigned to a section of a recreation trail, e.g., 1, 10, A, B, EATON LAKE."
+    },
+    {
+      "name": "RECREATION_MAP_FEATURE_CODE",
+      "type": "string",
+      "description": "Code that identifies the type of recreation feature, i.e., IF (interpretive forest trail), RTR (recreation trail)."
+    },
+    {
+      "name": "PROJECT_TYPE",
+      "type": "string",
+      "description": "Description of the type of recreation feature, i.e., Interpretative Forest, Recreation Trail."
+    },
+    {
+      "name": "RETIREMENT_DATE",
+      "type": "timestamp[ms]",
+      "description": "For a retired recreation feature, this is the date and time the recreation feature was retired."
+    },
+    {
+      "name": "AMENDMENT_ID",
+      "type": "int32",
+      "description": "The number of times a feature has been amended over its lifetime."
+    },
+    {
+      "name": "MAP_LABEL",
+      "type": "string",
+      "description": "The default label often used when displaying the feature on a map, and consists of the FOREST FILE ID and SECTION ID separated by a space, e.g., REC4531 15, REC3069 EATON LAKE."
+    },
+    {
+      "name": "PROJECT_NAME",
+      "type": "string",
+      "description": "The name of the area or trail network, usually a geographic name, e.g., OKEOVER TRAILS."
+    },
+    {
+      "name": "RECREATION_FEATURE_CODE",
+      "type": "string",
+      "description": "Code describing the type of natural or man made recreation feature, e.g., H3 (Historic Route)."
+    },
+    {
+      "name": "RESOURCE_FEATURE_IND",
+      "type": "string",
+      "description": "Indicates whether this is a resource feature established under the Government Action Regulation."
+    },
+    {
+      "name": "RIGHT_OF_WAY",
+      "type": "int32",
+      "description": "The entire width of the Right of Way for the linear feature."
+    },
+    {
+      "name": "ARCH_IMPACT_ASSESS_IND",
+      "type": "string",
+      "description": "Indicates if an archaeological impact assessment has been performed for the given project."
+    },
+    {
+      "name": "SITE_LOCATION",
+      "type": "string",
+      "description": "The closest town or city to the recreation feature, e.g. KELOWNA, BELLA COOLA."
+    },
+    {
+      "name": "PROJECT_ESTABLISHED_DATE",
+      "type": "timestamp[ms]",
+      "description": "This is the date on which the recreation project was legally established."
+    },
+    {
+      "name": "RECREATION_VIEW_IND",
+      "type": "string"
+    },
+    {
+      "name": "RECREATION_DISTRICT_CODE",
+      "type": "string",
+      "description": "A comma-separated list of codes relating to the recreation districts that the recreation feature is within, e.g., RDCO,RDKB,RDOS."
+    },
+    {
+      "name": "DEFINED_CAMPSITES",
+      "type": "int32",
+      "description": "The total number of campsites."
+    },
+    {
+      "name": "LIFE_CYCLE_STATUS_CODE",
+      "type": "string",
+      "description": "The life cycle state of the feature, e.g., PENDING, ACTIVE, RETIRED."
+    },
+    {
+      "name": "FILE_STATUS_CODE",
+      "type": "string",
+      "description": "The current status of the recreation tenure, eg. AR (archived), HI (issued), PI (pending issuance)."
+    },
+    {
+      "name": "DISTRICT_CODE",
+      "type": "string",
+      "description": "The code of the natural resource district associated with this feature."
+    },
+    {
+      "name": "DISTRICT_NAME",
+      "type": "string",
+      "description": "The name of the natural resource district associated with this feature."
+    },
+    {
+      "name": "FEATURE_CLASS_SKEY",
+      "type": "int32",
+      "description": "Unique identifier for the spatial feature class."
+    },
+    {
+      "name": "FEATURE_LENGTH",
+      "type": "double",
+      "description": "Spatial perimeter length in metres. This value is calculated in the source system."
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double",
+      "description": "The system calculated length or perimeter of a geometry in meters."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "A column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "A binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -119.5532226,
+    49.9936133,
+    13
+  ],
+  "pmtiles:layers": [
+    "recreation-trails"
+  ],
+  "title": "Recreation Line",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -134.99525281535426,
+          48.48632798265462,
+          -114.04273921296817,
+          60.000363158278475
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Recreation Sites and Trails BC, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/recreation-line"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./recreation-trails.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 60720,
+      "file:checksum": "122062d084780e3b5b0c7849a99563643f66960d6237f3a46e82af15b4ece7c7aa6c",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 6014,
+      "file:checksum": "122084d643aeff6ebece9675cdd8dffd53dfdd28fe4a19623d4c379afbcc241428c1",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "recreation-trails": {
+      "href": "./recreation-trails.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 31248532,
+      "file:checksum": "1220acf2dd3e5804f63be44def9aa4a6bb2502fd9b7fa47ffe222a22710b965f2a24",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "recreation-trails-tiles": {
+      "href": "./recreation-trails.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "recreation-trails (vector tiles)",
+      "file:size": 29298746,
+      "file:checksum": "1220030cffcf8bb26f3da07bfaab7d37d4c3e0307805cb3bf3cfa34b49b678f8818e",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Feature type",
+      "file:size": 939,
+      "file:checksum": "12207e0d994b962814580fb4e9d9122bd430e0ea90b23672630dd44db954d084a6d2"
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "type": "Collection",
+  "id": "hydrometric-stations",
+  "stac_version": "1.1.0",
+  "description": "2,317 active and discontinued Water Survey of Canada water level and streamflow stations in BC. Published by Environmental Monitoring and Analysis Branch (Province of British Columbia) as [Hydrometric Stations - Active and Discontinued](https://catalogue.data.gov.bc.ca/dataset/hydrometric-stations-active-and-discontinued) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/hydrometric-stations-active-and-discontinued",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./hydrometric-stations.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "hydrometric-stations"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Point",
+  "geoparquet:feature_count": 2317,
+  "table:row_count": 2317,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "HYDROMETRIC_STATION_ID",
+      "type": "int32"
+    },
+    {
+      "name": "STATION_NUMBER",
+      "type": "string",
+      "description": "STATION NUMBER is the unique identifier for a Hydrometric Station."
+    },
+    {
+      "name": "FEATURE_CODE",
+      "type": "string",
+      "description": "FEATURE CODE is a standard alphanumeric code to identify the type of feature represented by the spatial data. A feature code is most importantly a means of linking a feature to its name and definition. For example, the code GB15300120 on a digital geographic feature links it to the name \"Lake - Dry\" with the definition \"A lake bed from which all water has drained or evaporated.\" The feature code does NOT mark when it was digitized, what dataset it belongs to, how accurate it is, what it should look like when plotted, or who is responsible for updating it. It only says what it represents in the real world. It also doesn't even matter how the lake is represented. If it is a very small lake, it may be stored as a point feature. If it is large enough to have a shape at the scale of data capture, it may be stored as an outline, or a closed polygon. The same feature code still links it to the same definition."
+    },
+    {
+      "name": "STATION_NAME",
+      "type": "string",
+      "description": "STATION_NAME is the Hydrometric Station Name. e.g., \"LINDEMAN CREEK NEAR BENNETT\", \"ATLIN LAKE AT ATLIN\"."
+    },
+    {
+      "name": "FLOW_TYPE",
+      "type": "string",
+      "description": "FLOW_TYPE represents Natural or Regulated flow. i.e., \"NATURAL\" or \"REGULATED\"."
+    },
+    {
+      "name": "WATERSHED_GROUP_CODE",
+      "type": "string",
+      "description": "WATERSHED_GROUP_CODE refers to Watershed Atlas Watershed Group. WATERSHED GROUP CODE will have null values for non-spatially verified stations."
+    },
+    {
+      "name": "WATERSHED_ID",
+      "type": "string",
+      "description": "WATERSHED_ID is used for Watershed Atlas Identification. WATERSHED ID will have null values for non-spatially verified stations."
+    },
+    {
+      "name": "STREAM_ORDER",
+      "type": "string",
+      "description": "STREAM_ORDER stores the stream order as a numeric value. The stream order is based on 1:50000 scale mapping."
+    },
+    {
+      "name": "ARCHIVE_URL",
+      "type": "string",
+      "description": "ARCHIVE_URL is a URL for Environment and Climate Change Canada web site showing archival flow information for a specific station."
+    },
+    {
+      "name": "REALTIME_URL",
+      "type": "string",
+      "description": "REALTIME_URL is a URL for Environment and Climate Change Canada web site showing real time water level data for a specific station."
+    },
+    {
+      "name": "STATION_OPERATING_STATUS",
+      "type": "string",
+      "description": "STATION_OPERATING_STATUS represents the Hydrometric Station Status. i.e., \"ACTIVE\u201d, \u201cACTIVE-REALTIME\u201d, OR \u201cDISCONTINUED\u201d."
+    },
+    {
+      "name": "CAPTURE_SCALE",
+      "type": "string",
+      "description": "CAPTURE_SCALE is the scale at which a station point was mapped. e.g., 1:50,000."
+    },
+    {
+      "name": "START_DATE",
+      "type": "timestamp[ms]",
+      "description": "START_DATE is the earliest measurement date of approved hydrometric data for a station."
+    },
+    {
+      "name": "END_DATE",
+      "type": "timestamp[ms]",
+      "description": "END_DATE is the most recent measurement date of approved hydrometric data for a station."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "OBJECTID is a required attribute of feature classes and object classes in a geodatabase."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -117.2680664,
+    49.5109414,
+    13
+  ],
+  "pmtiles:layers": [
+    "hydrometric-stations"
+  ],
+  "title": "Hydrometric Stations - Active and Discontinued",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -135.01300000023087,
+          48.347,
+          -114.53500000058915,
+          59.98900000038328
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Environmental Monitoring and Analysis Branch, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/hydrometric-stations-active-and-discontinued"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./hydrometric-stations.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 33159,
+      "file:checksum": "1220ba6d269232ec09db6d149808750ded9ddd43a9f77013ab0243d8d83ae0e03b72",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 6063,
+      "file:checksum": "122057baa9df9fb9ad3b51c74f0ccabbf6fb5eea76e5583c9e5228d44308477c4440",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "hydrometric-stations": {
+      "href": "./hydrometric-stations.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 178902,
+      "file:checksum": "12205b82ea05a626ae2b7c5dddc561b9fd85bd50360248a691523cea8321e203a5ad",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "hydrometric-stations-tiles": {
+      "href": "./hydrometric-stations.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "hydrometric-stations (vector tiles)",
+      "file:size": 3969852,
+      "file:checksum": "122020da92e9f3b95cb3a080bd1fdb50515c657f9f2b53f62eae7d651dfd7afd6d3b",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Operating status",
+      "file:size": 875,
+      "file:checksum": "12200213089823e56bbc703f1d5279353dd17a3c2796f6af9ea532d8cab4664624f5"
+    }
+  }
+}

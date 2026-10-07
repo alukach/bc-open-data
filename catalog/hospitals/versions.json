@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.975753Z",
+      "breaking": false,
+      "assets": {
+        "hospitals.thumb.jpg": {
+          "sha256": "dd57ec3ae88bed457aa01810d347e6ec26602af4d3bd366a18c33ea32dd6098d",
+          "size_bytes": 5639,
+          "href": "hospitals/hospitals.thumb.jpg",
+          "mtime": 1791386639.8465889
+        },
+        "README.md": {
+          "sha256": "27a4cd110ecf12607518c014ab64b4c9c71d69fad6e3ffb3a4b69202987e2599",
+          "size_bytes": 1920,
+          "href": "hospitals/README.md",
+          "mtime": 1791386612.7390969
+        },
+        "hospitals.parquet": {
+          "sha256": "96db658902bebcc12f96207ba4077dae3167f14cb3f8d7ed6fc979a57f85a6b8",
+          "size_bytes": 32746,
+          "href": "hospitals/hospitals.parquet",
+          "source_mtime": 1791380723.5113227,
+          "mtime": 1791380723.5113227,
+          "feature_count": 91,
+          "schema_fingerprint": "bf9bb2fbaf8e74c9"
+        }
+      },
+      "changes": [
+        "hospitals.thumb.jpg",
+        "README.md",
+        "hospitals.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.334392Z",
+      "breaking": false,
+      "assets": {
+        "hospitals.thumb.jpg": {
+          "sha256": "dd57ec3ae88bed457aa01810d347e6ec26602af4d3bd366a18c33ea32dd6098d",
+          "size_bytes": 5639,
+          "href": "hospitals/hospitals.thumb.jpg",
+          "mtime": 1791386639.8465889
+        },
+        "README.md": {
+          "sha256": "27a4cd110ecf12607518c014ab64b4c9c71d69fad6e3ffb3a4b69202987e2599",
+          "size_bytes": 1920,
+          "href": "hospitals/README.md",
+          "mtime": 1791386612.7390969
+        },
+        "hospitals.parquet": {
+          "sha256": "96db658902bebcc12f96207ba4077dae3167f14cb3f8d7ed6fc979a57f85a6b8",
+          "size_bytes": 32746,
+          "href": "hospitals/hospitals.parquet",
+          "source_mtime": 1791380723.5113227,
+          "mtime": 1791380723.5113227,
+          "feature_count": 91,
+          "schema_fingerprint": "bf9bb2fbaf8e74c9"
+        },
+        "hospitals.pmtiles": {
+          "sha256": "459df8cc68a84e8cbfc7b752721871bef5b738fe7e52ff6473590377114c8185",
+          "size_bytes": 483992,
+          "href": "hospitals/hospitals.pmtiles",
+          "mtime": 1791387296.798915
+        }
+      },
+      "changes": [
+        "hospitals.pmtiles"
+      ]
+    }
+  ]
+}

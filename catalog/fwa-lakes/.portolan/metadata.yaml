@@ -1,0 +1,23 @@
+title: "Freshwater Atlas - Lakes"
+description: "386,025 lake polygons from the Freshwater Atlas, BC's 1:20,000 corporate watershed base. Published by GeoBC Branch (Province of British Columbia) as [Freshwater Atlas - Lakes](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-lakes) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md)."
+
+contact:
+  name: "Anthony Lukach"
+  email: "anthonylukach@gmail.com"
+
+license: "other"
+license_url: "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc"
+attribution: "Contains information licensed under the Open Government Licence \u2013 British Columbia."
+
+providers:
+  - name: "GeoBC Branch, Province of British Columbia"
+    roles: ["producer", "licensor"]
+    url: "https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-lakes"
+  - name: "Anthony Lukach"
+    roles: ["processor", "host"]
+    url: "https://source.coop/alukach/bc-open-data"
+
+keywords: ["British Columbia", "CWB", "corporate watershed base", "freshwater atlas"]
+source_url: "https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-lakes"
+processing_notes: "Extracted province-wide on 2026-10-07 from the [BC Geographic Warehouse WFS](https://openmaps.gov.bc.ca/geo/pub/wfs) by scripts/extract.sh in [github.com/alukach/bc-open-data](https://github.com/alukach/bc-open-data): pages of 10,000 features sorted by OBJECTID, row count checked against the server's numberMatched. Geometry is kept in the source CRS, EPSG:3005 (BC Albers); the file is spatially sorted with a bbox covering column. Dropped: GeoServer's synthetic `id`, and LATITUDE/LONGITUDE where the geometry carries them. PMTiles by scripts/tile.sh (tippecanoe, zooms 0-13). BCGW table: FWA_LAKES_POLY."
+known_issues: ""

@@ -1,0 +1,115 @@
+{
+  "type": "Catalog",
+  "id": "bc-open-data",
+  "stac_version": "1.1.0",
+  "description": "Province-wide mirrors of openly licensed datasets from the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/), converted from the Province's web services to GeoParquet (query directly with DuckDB over HTTPS) and PMTiles. Independent mirror, not a Province of British Columbia publication; every collection is under the [Open Government Licence – British Columbia](https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc). Start with [AGENTS.md](AGENTS.md) for query recipes. Build code and issues: [github.com/alukach/bc-open-data](https://github.com/alukach/bc-open-data).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "child",
+      "href": "./municipalities/collection.json",
+      "type": "application/json",
+      "title": "Municipalities - Legally Defined Administrative Areas of BC"
+    },
+    {
+      "rel": "child",
+      "href": "./fwa-rivers/collection.json",
+      "type": "application/json",
+      "title": "Freshwater Atlas - Rivers"
+    },
+    {
+      "rel": "child",
+      "href": "./fwa-wetlands/collection.json",
+      "type": "application/json",
+      "title": "Freshwater Atlas - Wetlands"
+    },
+    {
+      "rel": "child",
+      "href": "./water-wells/collection.json",
+      "type": "application/json",
+      "title": "Groundwater Wells"
+    },
+    {
+      "rel": "child",
+      "href": "./aquifers/collection.json",
+      "type": "application/json",
+      "title": "Ground Water Aquifers"
+    },
+    {
+      "rel": "child",
+      "href": "./wildfire-incidents/collection.json",
+      "type": "application/json",
+      "title": "BC Wildfire Fire Incident Locations - Historical"
+    },
+    {
+      "rel": "child",
+      "href": "./wildfire-perimeters/collection.json",
+      "type": "application/json",
+      "title": "BC Wildfire Fire Perimeters - Historical"
+    },
+    {
+      "rel": "child",
+      "href": "./schools/collection.json",
+      "type": "application/json",
+      "title": "BC Schools - K-12 with Francophone Indicators"
+    },
+    {
+      "rel": "child",
+      "href": "./hospitals/collection.json",
+      "type": "application/json",
+      "title": "Hospitals in BC"
+    },
+    {
+      "rel": "child",
+      "href": "./recreation-trails/collection.json",
+      "type": "application/json",
+      "title": "Recreation Line"
+    },
+    {
+      "rel": "child",
+      "href": "./culverts/collection.json",
+      "type": "application/json",
+      "title": "Ministry of Transportation (MOT) Culverts"
+    },
+    {
+      "rel": "child",
+      "href": "./hydrometric-stations/collection.json",
+      "type": "application/json",
+      "title": "Hydrometric Stations - Active and Discontinued"
+    },
+    {
+      "rel": "child",
+      "href": "./parks/collection.json",
+      "type": "application/json",
+      "title": "BC Parks, Ecological Reserves, and Protected Areas"
+    },
+    {
+      "rel": "child",
+      "href": "./fwa-lakes/collection.json",
+      "type": "application/json",
+      "title": "Freshwater Atlas - Lakes"
+    }
+  ],
+  "title": "British Columbia Open Data",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z"
+}

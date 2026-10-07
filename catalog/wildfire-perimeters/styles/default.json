@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "name": "Fire year",
+  "sources": {
+    "wildfire-perimeters": {
+      "type": "vector",
+      "url": "pmtiles://../wildfire-perimeters.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "wildfire-perimeters-fill",
+      "type": "fill",
+      "source": "wildfire-perimeters",
+      "source-layer": "wildfire-perimeters",
+      "paint": {
+        "fill-color": [
+          "step",
+          [
+            "get",
+            "FIRE_YEAR"
+          ],
+          "#feedde",
+          1960,
+          "#fdbe85",
+          1980,
+          "#fd8d3c",
+          2000,
+          "#e6550d",
+          2020,
+          "#a63603"
+        ],
+        "fill-opacity": 0.7,
+        "fill-outline-color": "#ffffff"
+      }
+    }
+  ]
+}

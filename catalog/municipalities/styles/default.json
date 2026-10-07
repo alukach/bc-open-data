@@ -1,0 +1,35 @@
+{
+  "version": 8,
+  "name": "Municipal boundaries",
+  "sources": {
+    "municipalities": {
+      "type": "vector",
+      "url": "pmtiles://../municipalities.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "municipalities-fill",
+      "type": "fill",
+      "source": "municipalities",
+      "source-layer": "municipalities",
+      "paint": {
+        "fill-color": "#f4a261",
+        "fill-opacity": 0.35,
+        "fill-outline-color": "#e76f51"
+      }
+    },
+    {
+      "id": "municipalities-line",
+      "type": "line",
+      "source": "municipalities",
+      "source-layer": "municipalities",
+      "paint": {
+        "line-color": "#e76f51",
+        "line-width": 1
+      }
+    }
+  ]
+}

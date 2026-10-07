@@ -1,0 +1,49 @@
+{
+  "version": 8,
+  "name": "Well class",
+  "sources": {
+    "water-wells": {
+      "type": "vector",
+      "url": "pmtiles://../water-wells.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "water-wells-circle",
+      "type": "circle",
+      "source": "water-wells",
+      "source-layer": "water-wells",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "WELL_CLASS"
+          ],
+          "Water Supply",
+          "#8c510a",
+          "Unknown",
+          "#d8b365",
+          "Monitoring",
+          "#5ab4ac",
+          "Dewatering/drainage",
+          "#01665e",
+          "Closed Loop Geo",
+          "#c51b7d",
+          "Geotechnical",
+          "#4d9221",
+          "Remediation",
+          "#f1b6da",
+          "Injection",
+          "#35978f",
+          "#b0b0b0"
+        ],
+        "circle-radius": 3,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

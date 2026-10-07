@@ -1,0 +1,39 @@
+{
+  "version": 8,
+  "name": "Cause",
+  "sources": {
+    "wildfire-incidents": {
+      "type": "vector",
+      "url": "pmtiles://../wildfire-incidents.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "wildfire-incidents-circle",
+      "type": "circle",
+      "source": "wildfire-incidents",
+      "source-layer": "wildfire-incidents",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "FIRE_CAUSE"
+          ],
+          "Lightning",
+          "#b2182b",
+          "Person",
+          "#ef8a62",
+          "Unknown",
+          "#fddbc7",
+          "#b0b0b0"
+        ],
+        "circle-radius": 2.5,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

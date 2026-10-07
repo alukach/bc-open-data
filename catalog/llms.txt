@@ -1,0 +1,27 @@
+# British Columbia Open Data
+
+> Province-wide mirrors of openly licensed BC Data Catalogue datasets as GeoParquet (query with DuckDB over HTTPS; EPSG:3005, spatially sorted with a bbox covering column) and PMTiles. Independent mirror, extracted 2026-10-07, Open Government Licence – British Columbia. Build code and issues: https://github.com/alukach/bc-open-data
+
+Start with the catalog agent guide: collections, join keys, and a recipe to cut any collection to one municipality.
+
+## Guides
+
+- [Catalog agent guide](https://data.source.coop/alukach/bc-open-data/AGENTS.md)
+- [STAC catalog](https://data.source.coop/alukach/bc-open-data/catalog.json)
+
+## Collections
+
+- [Ground Water Aquifers](https://data.source.coop/alukach/bc-open-data/aquifers/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/aquifers/aquifers.parquet`
+- [Ministry of Transportation (MOT) Culverts](https://data.source.coop/alukach/bc-open-data/culverts/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/culverts/culverts.parquet`
+- [Freshwater Atlas - Lakes](https://data.source.coop/alukach/bc-open-data/fwa-lakes/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/fwa-lakes/fwa-lakes.parquet`
+- [Freshwater Atlas - Rivers](https://data.source.coop/alukach/bc-open-data/fwa-rivers/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/fwa-rivers/fwa-rivers.parquet`
+- [Freshwater Atlas - Wetlands](https://data.source.coop/alukach/bc-open-data/fwa-wetlands/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/fwa-wetlands/fwa-wetlands.parquet`
+- [Hospitals in BC](https://data.source.coop/alukach/bc-open-data/hospitals/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/hospitals/hospitals.parquet`
+- [Hydrometric Stations - Active and Discontinued](https://data.source.coop/alukach/bc-open-data/hydrometric-stations/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/hydrometric-stations/hydrometric-stations.parquet`
+- [Municipalities - Legally Defined Administrative Areas of BC](https://data.source.coop/alukach/bc-open-data/municipalities/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/municipalities/municipalities.parquet`
+- [BC Parks, Ecological Reserves, and Protected Areas](https://data.source.coop/alukach/bc-open-data/parks/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/parks/parks.parquet`
+- [Recreation Line](https://data.source.coop/alukach/bc-open-data/recreation-trails/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/recreation-trails/recreation-trails.parquet`
+- [BC Schools - K-12 with Francophone Indicators](https://data.source.coop/alukach/bc-open-data/schools/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/schools/schools.parquet`
+- [Groundwater Wells](https://data.source.coop/alukach/bc-open-data/water-wells/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/water-wells/water-wells.parquet`
+- [BC Wildfire Fire Incident Locations - Historical](https://data.source.coop/alukach/bc-open-data/wildfire-incidents/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/wildfire-incidents/wildfire-incidents.parquet`
+- [BC Wildfire Fire Perimeters - Historical](https://data.source.coop/alukach/bc-open-data/wildfire-perimeters/AGENTS.md): `https://data.source.coop/alukach/bc-open-data/wildfire-perimeters/wildfire-perimeters.parquet`

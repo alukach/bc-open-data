@@ -1,0 +1,43 @@
+{
+  "version": 8,
+  "name": "Feature type",
+  "sources": {
+    "recreation-trails": {
+      "type": "vector",
+      "url": "pmtiles://../recreation-trails.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "recreation-trails-line",
+      "type": "line",
+      "source": "recreation-trails",
+      "source-layer": "recreation-trails",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "PROJECT_TYPE"
+          ],
+          "Recreation Trail Reserve",
+          "#e41a1c",
+          "Recreation Trail Established",
+          "#377eb8",
+          "Trail Based Recreation Linear",
+          "#4daf4a",
+          "Interpretive Forest Trail",
+          "#984ea3",
+          "Interpretative Forest",
+          "#ff7f00",
+          "Recreation Reserve",
+          "#a65628",
+          "#b0b0b0"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

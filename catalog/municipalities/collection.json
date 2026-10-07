@@ -1,0 +1,270 @@
+{
+  "type": "Collection",
+  "id": "municipalities",
+  "stac_version": "1.1.0",
+  "description": "The legally defined boundaries of BC's 160 municipalities (cities, districts, towns, villages and other local governments). Published by Governance and Structure (Province of British Columbia) as [Municipalities - Legally Defined Administrative Areas of BC](https://catalogue.data.gov.bc.ca/dataset/municipalities-legally-defined-administrative-areas-of-bc) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/municipalities-legally-defined-administrative-areas-of-bc",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./municipalities.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "municipalities"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 160,
+  "table:row_count": 160,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "LGL_ADMIN_AREA_ID",
+      "type": "int32",
+      "description": "An operationally-generated unique identification number, e.g., 1, 2,3."
+    },
+    {
+      "name": "ADMIN_AREA_NAME",
+      "type": "string",
+      "description": "The authoritative, officially approved name given to the Administrative Area, e.g., Corporation of the Village of Tofino."
+    },
+    {
+      "name": "ADMIN_AREA_ABBREVIATION",
+      "type": "string",
+      "description": "A short form or commonly-known acronym for the Administrative Area name, e.g., Tofino (Corporation of the Village of Tofino)."
+    },
+    {
+      "name": "ADMIN_AREA_BOUNDARY_TYPE",
+      "type": "string",
+      "description": "BOUNDARY TYPE is a high-level grouping of Administrative Areas used to categorise features when reporting, e.g., Census, Legal, Administrative."
+    },
+    {
+      "name": "ADMIN_AREA_GROUP_NAME",
+      "type": "string",
+      "description": "The name given to the larger administrative area (if there is any) of which this feature is a member, e.g., Regional District of Alberni Clayquot (This would be the ADMIN_AREA_GROUP_NAME of the feature called \"The Corporation of the Village of Tofino\")."
+    },
+    {
+      "name": "CHANGE_REQUESTED_ORG",
+      "type": "string",
+      "description": "The government acronym of the Ministry or sub-org that last requested the change that resulted in the modification of the record, e.g., GeoBC, MMAH."
+    },
+    {
+      "name": "UPDATE_TYPE",
+      "type": "string",
+      "description": "A short description of the latest alteration of the feature's geographic or attribute content, e.g., Inserted (added new), Change in geometry."
+    },
+    {
+      "name": "WHEN_UPDATED",
+      "type": "timestamp[ms]",
+      "description": "The date and time the record was last modified."
+    },
+    {
+      "name": "MAP_STATUS",
+      "type": "string",
+      "description": "That the digital map has been appended to Letters Patent of the administrative area and has received cabinet or ministerial approval, i.e., \"Appended\": the digital map has been appended to Letters Patent of the municipality, electoral area, regional district or improvement district and has received cabinet or ministerial approval. The map is referred to as the legal map and forms Schedule 1 to Letters Patent. \"Not Appended\": the digital map exists but currently there is no legislative mechanism that enables the map to be appended to Letters Patent in the absence of a request for a boundary amendment. In other words, while the digital map is the exact representation of the administrative boundary, it is not considered legal until appended to Letters Patent. If there is a discrepancy in the boundary, the written metes and bounds prevail. Null values are permitted for Administrative Areas for which the map status does not apply."
+    },
+    {
+      "name": "OIC_MO_NUMBER",
+      "type": "string",
+      "description": "The most-recent Order-In-Council (OIC) or Ministerial Order (MO) identifier for a particular administrative area. This number is used in conjunction with the OIC_MO_YEAR and the OIC_MO_TYPE to determine the official OIC or MO Number, which is usually in the form ###/YY(YY), e.g., where OIC_MO_NUMBER is 245, the OIC_MO_YEAR is 2013 and the OIC_MO_TYPE is \"OIC\", the latest OIC for this administrative area is OIC 245/13 that was enacted into law in 2013. Similarily, where OIC_MO_NUMBER is 103 and the OIC_MO_YEAR is 2019 and the OIC_MO_TYPE is \"MO\", the latest Ministerial Order for this administrative area is MO 103/2019 enacted into law in 2019."
+    },
+    {
+      "name": "OIC_MO_YEAR",
+      "type": "string",
+      "description": "The four-digit year that the most recent Order-In-Council or Ministerial Order was approved, e.g., 2014."
+    },
+    {
+      "name": "OIC_MO_TYPE",
+      "type": "string",
+      "description": "The short acronym that determines the type of identifier used in the OIC_MO_NUMBER, e.g., OIC (Order-In-Council), MO (Ministerial Order), OTHER (The boundary was issued using a procedure outside of the traditional mechanisms)."
+    },
+    {
+      "name": "WEBSITE_URL",
+      "type": "string",
+      "description": "An Internet URL link to additional project information and/or files related to the OIC_MO_NUMBER."
+    },
+    {
+      "name": "IMAGE_URL",
+      "type": "string",
+      "description": "An Internet URL link to additional image files related to the OIC_MO_NUMBER."
+    },
+    {
+      "name": "AFFECTED_ADMIN_AREA_ABRVN",
+      "type": "string",
+      "description": "A semicolon-delimited list of the abbreviations (ADMIN_AREA_ABBREVIATION) of Administrative Area boundaries that are affected by the OIC number in the OIC year, e.g., NCRD-EA E / NCRD-EA H. If a record has the value \"NCRD-EA E / NCRD-EA H\" for AFFECTED_ADMIN_AREA_ABRVN, an ADMIN_AREA_ABBREVIATION of Prince Rupert, an OIC/MO (OIC_MO_NUMBER) value of 501/14, an OIC/MO Year (OIC_MO_YEAR) value of 2014, and an Administrative Area Group Name (ADMIN_AREA_GROUP_NAME) of North Coast Regional District, then the interpretation is that OIC 501 in the year 2014 for Prince Rupert also affects the boundaries of Electoral Areas NCRD-EA E and NCRD-EA H in the North Coast Regional District."
+    },
+    {
+      "name": "FEATURE_AREA_SQM",
+      "type": "double",
+      "description": "The system calculated area of a two-dimensional polygon in square meters."
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double",
+      "description": "The system calculated length or perimeter of a geometry in meters."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "A column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "A binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -123.4643554,
+    48.618383,
+    13
+  ],
+  "pmtiles:layers": [
+    "municipalities"
+  ],
+  "title": "Municipalities - Legally Defined Administrative Areas of BC",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -132.3368728,
+          48.30621287949082,
+          -114.62615630549348,
+          60.00478255729097
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Governance and Structure, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/municipalities-legally-defined-administrative-areas-of-bc"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "municipalities": {
+      "href": "./municipalities.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 1356244,
+      "file:checksum": "122088381f6c1f483d21e490e9b05287b848c6d04e4c756d20facc379a8ee26d04cd",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./municipalities.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 22286,
+      "file:checksum": "1220b633483e38beff1b82c8a9166f98793eed72eabde558d5182bdeba2d81e1c0a3",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 8220,
+      "file:checksum": "12209701a53d39675b8637e34dd887b7d97e6ac0e4b6cc86ae1a8b32d8835de2ae33",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "municipalities-tiles": {
+      "href": "./municipalities.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "municipalities (vector tiles)",
+      "file:size": 2621530,
+      "file:checksum": "12202dc8927b1ae3584b07b397f93245a950020ca163500e8b5dbf49bc26788f07ea",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Municipal boundaries",
+      "file:size": 735,
+      "file:checksum": "1220f67914f7da9dfb2f5891ac2d6fb43e232af2585bab7f03e65d0492567bb38066"
+    }
+  }
+}

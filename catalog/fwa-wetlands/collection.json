@@ -1,0 +1,303 @@
+{
+  "type": "Collection",
+  "id": "fwa-wetlands",
+  "stac_version": "1.1.0",
+  "description": "375,178 wetland polygons from the Freshwater Atlas. Published by GeoBC Branch (Province of British Columbia) as [Freshwater Atlas - Wetlands](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-wetlands) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-wetlands",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./fwa-wetlands.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "fwa-wetlands"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 375178,
+  "table:row_count": 375178,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "WATERBODY_POLY_ID",
+      "type": "int32",
+      "description": "The WATERBODY POLY ID is the unique key for the waterbody polygon spatial layer. It is not applied to the warehouse model only, i.e., it originates with the source FWA system."
+    },
+    {
+      "name": "WATERSHED_GROUP_ID",
+      "type": "int32",
+      "description": "An automatically generate id that uniquely identifies the watershed group feature."
+    },
+    {
+      "name": "WATERBODY_TYPE",
+      "type": "string",
+      "description": "The type of waterbody. Possible values include: 'L' (lake), 'R' (double lined river), 'W' (wetland), 'X' (manmade river or lake), or 'G' (glacier or icefield)."
+    },
+    {
+      "name": "WATERBODY_KEY",
+      "type": "int32",
+      "description": "A unique identifier associated with waterbodies in order to group polygons that make up a single waterbody."
+    },
+    {
+      "name": "AREA_HA",
+      "type": "double",
+      "description": "Area of polygon (hectares)."
+    },
+    {
+      "name": "GNIS_ID_1",
+      "type": "string",
+      "description": "A BCGNIS (BC Geographical Names Information System) feature id attached to a waterbody or island, if applicable. In a grouped system the feature id of the BCGNIS group is provided here and any subsequent names provided in gnis_id2 and gnis_id3. Note: For Vancouver Island, Graham Island, and Moresby Island the names are not attached to the label points."
+    },
+    {
+      "name": "GNIS_NAME_1",
+      "type": "string",
+      "description": "The name of the first BCGNIS (BC Geographical Names Information System) feature id (an English name was used where available, otherwise another language was selected)."
+    },
+    {
+      "name": "GNIS_ID_2",
+      "type": "string",
+      "description": "A second BCGNIS (BC Geographical Names Information System) feature id attached to a waterbody or island, if applicable."
+    },
+    {
+      "name": "GNIS_NAME_2",
+      "type": "string",
+      "description": "The name of the second BCGNIS (BC Geographical Names Information System) feature id (an English name was used where available, otherwise another language was selected)."
+    },
+    {
+      "name": "GNIS_ID_3",
+      "type": "string",
+      "description": "A third BCGNIS (BC Geographical Names Information System) feature id attached to a waterbody or island, if applicable."
+    },
+    {
+      "name": "GNIS_NAME_3",
+      "type": "string",
+      "description": "The name of the third BCGNIS (BC Geographical Names Information System) feature id (an English name was used where available, otherwise another language was selected)."
+    },
+    {
+      "name": "BLUE_LINE_KEY",
+      "type": "int32",
+      "description": "The blue line key of the controlling route through the waterbody."
+    },
+    {
+      "name": "WATERSHED_KEY",
+      "type": "int32",
+      "description": "The watershed key of the controlling rout through the waterbody."
+    },
+    {
+      "name": "FWA_WATERSHED_CODE",
+      "type": "string",
+      "description": "The watershed code of the controlling route through the waterbody."
+    },
+    {
+      "name": "LOCAL_WATERSHED_CODE",
+      "type": "string",
+      "description": "The local watershed code associated with the waterbody."
+    },
+    {
+      "name": "WATERSHED_GROUP_CODE",
+      "type": "string",
+      "description": "The watershed group codeof the watershed the feature is contained within."
+    },
+    {
+      "name": "LEFT_RIGHT_TRIBUTARY",
+      "type": "string",
+      "description": "A value attributed via the watershed code to all waterbodies indicating on what side of the watershed they drain into."
+    },
+    {
+      "name": "WATERBODY_KEY_50K",
+      "type": "int32",
+      "description": "The 'best' matched waterbody from the 1:50K Watershed Atlas. In cases where there are multiple matches to features in the 1:50K watershed atlas the match with the greatest overlapping area was used."
+    },
+    {
+      "name": "WATERSHED_GROUP_CODE_50K",
+      "type": "string",
+      "description": "The group code from the 1:50K Watershed Atlas associated with the waterbody key 50k."
+    },
+    {
+      "name": "WATERBODY_KEY_GROUP_CODE_50K",
+      "type": "string",
+      "description": "The waterbody key 50K with the group code 50K concatenated."
+    },
+    {
+      "name": "WATERSHED_CODE_50K",
+      "type": "string",
+      "description": "The 1:50K Watershed Atlas watershed code associated with the waterbody key 50K."
+    },
+    {
+      "name": "FEATURE_CODE",
+      "type": "string",
+      "description": "FEATURE CODE contains a value based on the Canadian Council of Surveys and Mapping's (CCSM) system for classification of geographic features."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32"
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string"
+    },
+    {
+      "name": "FEATURE_AREA_SQM",
+      "type": "double",
+      "description": "FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters"
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double",
+      "description": "FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -122.7612304,
+    58.2748412,
+    13
+  ],
+  "pmtiles:layers": [
+    "fwa-wetlands"
+  ],
+  "title": "Freshwater Atlas - Wetlands",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -138.058701731258,
+          48.3219216,
+          -114.06394904782282,
+          60.00002338244661
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoBC Branch, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-wetlands"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 6430,
+      "file:checksum": "1220571b8b2215e50c4d4b5888c242f96bf683982c13c2816594af32976621a4e2ca",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "thumbnail": {
+      "href": "./fwa-wetlands.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 142625,
+      "file:checksum": "12202c44822012e8d8fa9df6ae833a89a1f7507e742c343b32609c1eb1b3faf59169",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "fwa-wetlands": {
+      "href": "./fwa-wetlands.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 299626863,
+      "file:checksum": "12202e16dfa79caca1ba534348dbae29e41b87baa10890bbc415f867bbc9b8001b2a",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "fwa-wetlands-tiles": {
+      "href": "./fwa-wetlands.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "fwa-wetlands (vector tiles)",
+      "file:size": 364606178,
+      "file:checksum": "1220c4beff4d4ea0494a7cabece3bf80a0006601969d83652efe810321f76c52ef7d",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Wetlands",
+      "file:size": 487,
+      "file:checksum": "1220e4f22f7736cff311983d6eb9de41ee36d62786feccdc35bf57c9a0ceaac75437"
+    }
+  }
+}

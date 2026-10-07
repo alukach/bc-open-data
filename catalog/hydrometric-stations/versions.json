@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:32.001767Z",
+      "breaking": false,
+      "assets": {
+        "hydrometric-stations.thumb.jpg": {
+          "sha256": "354a8c9b30dbcdd1de176fb386b42dcc6a406c8a4caa57b7af1728924b827a8f",
+          "size_bytes": 18601,
+          "href": "hydrometric-stations/hydrometric-stations.thumb.jpg",
+          "mtime": 1791386639.875632
+        },
+        "README.md": {
+          "sha256": "98d851a3b01930f0a42edbae69270bb04eb254ee9ef64ae9cef426a4666d602a",
+          "size_bytes": 1528,
+          "href": "hydrometric-stations/README.md",
+          "mtime": 1791386612.7417414
+        },
+        "hydrometric-stations.parquet": {
+          "sha256": "5b82ea05a626ae2b7c5dddc561b9fd85bd50360248a691523cea8321e203a5ad",
+          "size_bytes": 178902,
+          "href": "hydrometric-stations/hydrometric-stations.parquet",
+          "source_mtime": 1791380772.6434786,
+          "mtime": 1791380772.6434786,
+          "feature_count": 2317,
+          "schema_fingerprint": "dc6c954897f9fcbb"
+        }
+      },
+      "changes": [
+        "hydrometric-stations.thumb.jpg",
+        "README.md",
+        "hydrometric-stations.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.354838Z",
+      "breaking": false,
+      "assets": {
+        "hydrometric-stations.thumb.jpg": {
+          "sha256": "354a8c9b30dbcdd1de176fb386b42dcc6a406c8a4caa57b7af1728924b827a8f",
+          "size_bytes": 18601,
+          "href": "hydrometric-stations/hydrometric-stations.thumb.jpg",
+          "mtime": 1791386639.875632
+        },
+        "README.md": {
+          "sha256": "98d851a3b01930f0a42edbae69270bb04eb254ee9ef64ae9cef426a4666d602a",
+          "size_bytes": 1528,
+          "href": "hydrometric-stations/README.md",
+          "mtime": 1791386612.7417414
+        },
+        "hydrometric-stations.parquet": {
+          "sha256": "5b82ea05a626ae2b7c5dddc561b9fd85bd50360248a691523cea8321e203a5ad",
+          "size_bytes": 178902,
+          "href": "hydrometric-stations/hydrometric-stations.parquet",
+          "source_mtime": 1791380772.6434786,
+          "mtime": 1791380772.6434786,
+          "feature_count": 2317,
+          "schema_fingerprint": "dc6c954897f9fcbb"
+        },
+        "hydrometric-stations.pmtiles": {
+          "sha256": "20da92e9f3b95cb3a080bd1fdb50515c657f9f2b53f62eae7d651dfd7afd6d3b",
+          "size_bytes": 3969852,
+          "href": "hydrometric-stations/hydrometric-stations.pmtiles",
+          "mtime": 1791387296.79893
+        }
+      },
+      "changes": [
+        "hydrometric-stations.pmtiles"
+      ]
+    }
+  ]
+}

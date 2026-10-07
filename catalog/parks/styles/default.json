@@ -1,0 +1,50 @@
+{
+  "version": 8,
+  "name": "Designation",
+  "sources": {
+    "parks": {
+      "type": "vector",
+      "url": "pmtiles://../parks.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "parks-fill",
+      "type": "fill",
+      "source": "parks",
+      "source-layer": "parks",
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "PROTECTED_LANDS_DESIGNATION"
+          ],
+          "PROVINCIAL PARK",
+          "#1b9e77",
+          "ECOLOGICAL RESERVE",
+          "#d95f02",
+          "PROTECTED AREA",
+          "#7570b3",
+          "RECREATION AREA",
+          "#e7298a",
+          "#b0b0b0"
+        ],
+        "fill-opacity": 0.6,
+        "fill-outline-color": "#ffffff"
+      }
+    },
+    {
+      "id": "parks-line",
+      "type": "line",
+      "source": "parks",
+      "source-layer": "parks",
+      "paint": {
+        "line-color": "#1b5e20",
+        "line-width": 0.75
+      }
+    }
+  ]
+}

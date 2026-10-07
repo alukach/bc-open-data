@@ -1,0 +1,26 @@
+{
+  "version": 8,
+  "name": "Hospitals",
+  "sources": {
+    "hospitals": {
+      "type": "vector",
+      "url": "pmtiles://../hospitals.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "hospitals-circle",
+      "type": "circle",
+      "source": "hospitals",
+      "source-layer": "hospitals",
+      "paint": {
+        "circle-color": "#c0392b",
+        "circle-radius": 6,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

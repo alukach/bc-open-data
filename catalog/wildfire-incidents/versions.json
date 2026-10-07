@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.950236Z",
+      "breaking": false,
+      "assets": {
+        "wildfire-incidents.parquet": {
+          "sha256": "ca3e75089f167b8d5369a69cd4f1d6537c071b6fdf8e977519c1764ce9323ef6",
+          "size_bytes": 11452052,
+          "href": "wildfire-incidents/wildfire-incidents.parquet",
+          "source_mtime": 1791381355.6952953,
+          "mtime": 1791381355.6952953,
+          "feature_count": 200479,
+          "schema_fingerprint": "033a9fa2c2bdeff0"
+        },
+        "wildfire-incidents.thumb.jpg": {
+          "sha256": "ffa7a4e99e665207409f6ec001aad800e5fc55b645f32b485b3378a7ecb240c0",
+          "size_bytes": 14678,
+          "href": "wildfire-incidents/wildfire-incidents.thumb.jpg",
+          "mtime": 1791386642.1548903
+        },
+        "README.md": {
+          "sha256": "3189de7ccc7e6fc5d4f822c36cf38082773787216412d50b9885011d74d2e51f",
+          "size_bytes": 1516,
+          "href": "wildfire-incidents/README.md",
+          "mtime": 1791386612.7567968
+        }
+      },
+      "changes": [
+        "wildfire-incidents.parquet",
+        "wildfire-incidents.thumb.jpg",
+        "README.md"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.312567Z",
+      "breaking": false,
+      "assets": {
+        "wildfire-incidents.parquet": {
+          "sha256": "ca3e75089f167b8d5369a69cd4f1d6537c071b6fdf8e977519c1764ce9323ef6",
+          "size_bytes": 11452052,
+          "href": "wildfire-incidents/wildfire-incidents.parquet",
+          "source_mtime": 1791381355.6952953,
+          "mtime": 1791381355.6952953,
+          "feature_count": 200479,
+          "schema_fingerprint": "033a9fa2c2bdeff0"
+        },
+        "wildfire-incidents.thumb.jpg": {
+          "sha256": "ffa7a4e99e665207409f6ec001aad800e5fc55b645f32b485b3378a7ecb240c0",
+          "size_bytes": 14678,
+          "href": "wildfire-incidents/wildfire-incidents.thumb.jpg",
+          "mtime": 1791386642.1548903
+        },
+        "README.md": {
+          "sha256": "3189de7ccc7e6fc5d4f822c36cf38082773787216412d50b9885011d74d2e51f",
+          "size_bytes": 1516,
+          "href": "wildfire-incidents/README.md",
+          "mtime": 1791386612.7567968
+        },
+        "wildfire-incidents.pmtiles": {
+          "sha256": "5a1704a0b191c9dd7325a2bb52b79ab9acd2a3bf0699da602eb38d9701a87ee6",
+          "size_bytes": 94758774,
+          "href": "wildfire-incidents/wildfire-incidents.pmtiles",
+          "mtime": 1791387296.799024
+        }
+      },
+      "changes": [
+        "wildfire-incidents.pmtiles"
+      ]
+    }
+  ]
+}

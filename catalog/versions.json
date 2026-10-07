@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "bc-open-data",
+  "created": "2026-10-07T15:23:13.617449+00:00",
+  "collections": {
+    "municipalities": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.272569+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 3988364
+    },
+    "fwa-rivers": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.286225+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 149234477
+    },
+    "fwa-wetlands": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.292829+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 664246829
+    },
+    "water-wells": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.299831+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 84097937
+    },
+    "aquifers": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.306168+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 19895131
+    },
+    "wildfire-incidents": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.312844+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 106227020
+    },
+    "wildfire-perimeters": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.319541+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 106324705
+    },
+    "schools": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.327520+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 2836902
+    },
+    "hospitals": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.334724+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 524297
+    },
+    "recreation-trails": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.341364+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 60565438
+    },
+    "culverts": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.348426+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 59033785
+    },
+    "hydrometric-stations": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.355114+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 4168883
+    },
+    "parks": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.362205+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 24803163
+    },
+    "fwa-lakes": {
+      "current_version": "1.0.1",
+      "updated": "2026-10-07T15:35:04.279721+00:00",
+      "asset_count": 4,
+      "total_size_bytes": 471656236
+    }
+  },
+  "updated": "2026-10-07T15:35:04.362205+00:00"
+}

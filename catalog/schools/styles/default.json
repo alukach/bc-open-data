@@ -1,0 +1,37 @@
+{
+  "version": 8,
+  "name": "School category",
+  "sources": {
+    "schools": {
+      "type": "vector",
+      "url": "pmtiles://../schools.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "schools-circle",
+      "type": "circle",
+      "source": "schools",
+      "source-layer": "schools",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "SCHOOL_CATEGORY"
+          ],
+          "Public School",
+          "#1b9e77",
+          "Independent School",
+          "#d95f02",
+          "#b0b0b0"
+        ],
+        "circle-radius": 4,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

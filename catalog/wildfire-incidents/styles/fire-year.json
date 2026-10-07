@@ -1,0 +1,41 @@
+{
+  "version": 8,
+  "name": "Fire year",
+  "sources": {
+    "wildfire-incidents": {
+      "type": "vector",
+      "url": "pmtiles://../wildfire-incidents.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "wildfire-incidents-circle",
+      "type": "circle",
+      "source": "wildfire-incidents",
+      "source-layer": "wildfire-incidents",
+      "paint": {
+        "circle-color": [
+          "step",
+          [
+            "get",
+            "FIRE_YEAR"
+          ],
+          "#feedde",
+          1960,
+          "#fdbe85",
+          1980,
+          "#fd8d3c",
+          2000,
+          "#e6550d",
+          2020,
+          "#a63603"
+        ],
+        "circle-radius": 2.5,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

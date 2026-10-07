@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.895759Z",
+      "breaking": false,
+      "assets": {
+        "municipalities.parquet": {
+          "sha256": "88381f6c1f483d21e490e9b05287b848c6d04e4c756d20facc379a8ee26d04cd",
+          "size_bytes": 1356244,
+          "href": "municipalities/municipalities.parquet",
+          "source_mtime": 1791380726.7906668,
+          "mtime": 1791380726.7906668,
+          "feature_count": 160,
+          "schema_fingerprint": "dd1feb1d1bf898d1"
+        },
+        "municipalities.thumb.jpg": {
+          "sha256": "1cf64a553a5066876754ae8fc03054d2b4c9c49815580ca3e345ffd0d3ad0294",
+          "size_bytes": 8971,
+          "href": "municipalities/municipalities.thumb.jpg",
+          "mtime": 1791386639.9468749
+        },
+        "README.md": {
+          "sha256": "b64339811071701c0c035b14d6c376aab69c799a0b6bb41cab982043928de9e1",
+          "size_bytes": 1619,
+          "href": "municipalities/README.md",
+          "mtime": 1791386612.7442436
+        }
+      },
+      "changes": [
+        "municipalities.parquet",
+        "municipalities.thumb.jpg",
+        "README.md"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.271794Z",
+      "breaking": false,
+      "assets": {
+        "municipalities.parquet": {
+          "sha256": "88381f6c1f483d21e490e9b05287b848c6d04e4c756d20facc379a8ee26d04cd",
+          "size_bytes": 1356244,
+          "href": "municipalities/municipalities.parquet",
+          "source_mtime": 1791380726.7906668,
+          "mtime": 1791380726.7906668,
+          "feature_count": 160,
+          "schema_fingerprint": "dd1feb1d1bf898d1"
+        },
+        "municipalities.thumb.jpg": {
+          "sha256": "1cf64a553a5066876754ae8fc03054d2b4c9c49815580ca3e345ffd0d3ad0294",
+          "size_bytes": 8971,
+          "href": "municipalities/municipalities.thumb.jpg",
+          "mtime": 1791386639.9468749
+        },
+        "README.md": {
+          "sha256": "b64339811071701c0c035b14d6c376aab69c799a0b6bb41cab982043928de9e1",
+          "size_bytes": 1619,
+          "href": "municipalities/README.md",
+          "mtime": 1791386612.7442436
+        },
+        "municipalities.pmtiles": {
+          "sha256": "2dc8927b1ae3584b07b397f93245a950020ca163500e8b5dbf49bc26788f07ea",
+          "size_bytes": 2621530,
+          "href": "municipalities/municipalities.pmtiles",
+          "mtime": 1791387296.798946
+        }
+      },
+      "changes": [
+        "municipalities.pmtiles"
+      ]
+    }
+  ]
+}

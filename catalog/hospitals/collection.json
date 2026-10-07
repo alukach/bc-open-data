@@ -1,0 +1,325 @@
+{
+  "type": "Collection",
+  "id": "hospitals",
+  "stac_version": "1.1.0",
+  "description": "91 hospitals listed by HealthLinkBC, with address, hours and services. Published by HealthLinkBC (Province of British Columbia) as [Hospitals in BC](https://catalogue.data.gov.bc.ca/dataset/hospitals-in-bc) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/hospitals-in-bc",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./hospitals.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "hospitals"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Point",
+  "geoparquet:feature_count": 91,
+  "table:row_count": 91,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "CUSTODIAN_ORG_DESCRIPTION",
+      "type": "string",
+      "description": "CUSTODIAN_ORG_DESCRIPTION contains the name or description of the custodial organization (usually Ministry and Branch)"
+    },
+    {
+      "name": "BUSINESS_CATEGORY_CLASS",
+      "type": "string",
+      "description": "BUSINESS_CATEGORY_CLASS designates the category of business, i.e., hospitals"
+    },
+    {
+      "name": "BUSINESS_CATEGORY_DESCRIPTION",
+      "type": "string",
+      "description": "BUSINESS_CATEGORY_DESCRIPTION describes the category of business, i.e., Hospitals"
+    },
+    {
+      "name": "OCCUPANT_TYPE_DESCRIPTION",
+      "type": "string",
+      "description": "OCCUPANT_TYPE_DESCRIPTION contains the description of the occupant type, e.g. Hospital"
+    },
+    {
+      "name": "SOURCE_DATA_ID",
+      "type": "string",
+      "description": "A unique occupant id either supplied by the source data system or produced by GSR, depending on the value of SUPPLIED_SOURCE_ID_IND"
+    },
+    {
+      "name": "SUPPLIED_SOURCE_ID_IND",
+      "type": "string",
+      "description": "SUPPLIED_SOURCE_ID_IND is an indicator of whether the source data id was supplied by the supplier (Y) or DataBC (N)"
+    },
+    {
+      "name": "OCCUPANT_NAME",
+      "type": "string",
+      "description": "A business name that can identify the occupant who provides the BC Government or BC Government related services to public."
+    },
+    {
+      "name": "DESCRIPTION",
+      "type": "string",
+      "description": "Describes the Occupant in more detail. e.g., Burnaby General Hospital (BGH) that is managed by Fraser Health Authority provides a wide range of integrated health care services from acute care hospitals to community-based residential, home health, mental health and public health."
+    },
+    {
+      "name": "PHYSICAL_ADDRESS",
+      "type": "string",
+      "description": "PHYSICAL_ADDRESS contains the civic or non-civic address as a single string, structured according to the specification of the Physical Address and Geocoding Standard, e.g., 420 GORGE RD E, VICTORIA, BC."
+    },
+    {
+      "name": "ALIAS_ADDRESS",
+      "type": "string",
+      "description": "ALIAS_ADDRESS contains an address string, not a parsed address. It is the address that will be displayed for presentation purposes, e.g., 32900 Marshall Road, Abbotsford, BC"
+    },
+    {
+      "name": "STREET_ADDRESS",
+      "type": "string",
+      "description": "A free form expression of the site descriptor (e.g., unit) and the civic building number / street / street indicator portion of an address, e.g., Unit 1, 123 Main Street East."
+    },
+    {
+      "name": "POSTAL_CODE",
+      "type": "string",
+      "description": "The Canadian Postal code value associated with the physical address, e.g., V9Z 2K1"
+    },
+    {
+      "name": "LOCALITY",
+      "type": "string",
+      "description": "The name of the municipality, community, Federal Indian Reserve (IR), subdivision, regional district, indigenous land or natural feature the occupant site is located in, e.g., Victoria, Saanich IR 1, Capital Regional District."
+    },
+    {
+      "name": "CONTACT_PHONE",
+      "type": "string",
+      "description": "Contains the \"general office\" phone number of the Occupant, e.g., 250-555-1234"
+    },
+    {
+      "name": "CONTACT_EMAIL",
+      "type": "string",
+      "description": "Contains the \"general office\" email address of the Occupant."
+    },
+    {
+      "name": "CONTACT_FAX",
+      "type": "string",
+      "description": "CONTACT_FAX contains the \"general office\" fax number of the Occupant, e.g., 250-555-1234"
+    },
+    {
+      "name": "WEBSITE_URL",
+      "type": "string",
+      "description": "Contains the link to the Home page of the Occupant's Website"
+    },
+    {
+      "name": "IMAGE_URL",
+      "type": "string",
+      "description": "IMAGE_URL contains a full URL link to a picture of the Occupant's Location."
+    },
+    {
+      "name": "KEYWORDS",
+      "type": "string",
+      "description": "Contains text strings supplied by the Custodian, to be used for search/query purposes. Keywords are separated by the ; delimiter."
+    },
+    {
+      "name": "DATE_UPDATED",
+      "type": "timestamp[ms]",
+      "description": "Contains the date that the Occupant data was updated in the Occupant structure (system-generated)"
+    },
+    {
+      "name": "SITE_GEOCODED_IND",
+      "type": "string",
+      "description": "SITE_GEOCODED_IND contains a Flag/indicator (Y/N) that the Occupant Physical Address has been geo-coded by the DataBC Address Geocoder and the results provide a valid site address, e.g., Y, N"
+    },
+    {
+      "name": "HOURS",
+      "type": "string",
+      "description": "Indicates the hours of operation."
+    },
+    {
+      "name": "LANGUAGE",
+      "type": "string",
+      "description": "Indicates the languages available for the Service."
+    },
+    {
+      "name": "ORGANIZATION_NAME",
+      "type": "string",
+      "description": "Describes the Organization Name."
+    },
+    {
+      "name": "PROVINCE",
+      "type": "string",
+      "description": "Indicates the Province the service is located in, i.e., BC, YT."
+    },
+    {
+      "name": "URL_811",
+      "type": "string",
+      "description": "URL Link to 811 Service Record."
+    },
+    {
+      "name": "WHEELCHAIR_ACCESSIBLE",
+      "type": "string",
+      "description": "Indicates whether Location is Wheelchair Accessible, i.e., Y, N."
+    },
+    {
+      "name": "SERVICE_REF",
+      "type": "int32",
+      "description": "A unique number, called an Internal Service Key, that is assigned to uniquely identify the service or program, e.g., 17640736."
+    },
+    {
+      "name": "SEQUENCE_ID",
+      "type": "int32",
+      "description": "SEQUENCE_ID contains a value to distinguish occupant instances. Where a single occupant can have multiple instances (representing different services, for example), this field distinguishes this occupant instance from other instances of the same or different occupants."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "A binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -123.1127929,
+    49.2534626,
+    13
+  ],
+  "pmtiles:layers": [
+    "hospitals"
+  ],
+  "title": "Hospitals in BC",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -135.04361900081688,
+          48.4340609,
+          -115.05660000070031,
+          60.71893900005339
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "HealthLinkBC, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/hospitals-in-bc"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./hospitals.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 13101,
+      "file:checksum": "12208460ff919a0ddf76ff79e071246379e65a16ca8e98aed4eb831632f0a5081e3a",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 7630,
+      "file:checksum": "1220d7d35a9ed53f724c26122f4991fb11db17b5657ad3b8422e166baf2781b75068",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "hospitals": {
+      "href": "./hospitals.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 32746,
+      "file:checksum": "122096db658902bebcc12f96207ba4077dae3167f14cb3f8d7ed6fc979a57f85a6b8",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "hospitals-tiles": {
+      "href": "./hospitals.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "hospitals (vector tiles)",
+      "file:size": 483992,
+      "file:checksum": "1220459df8cc68a84e8cbfc7b752721871bef5b738fe7e52ff6473590377114c8185",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Hospitals",
+      "file:size": 514,
+      "file:checksum": "122043ffbd147cfb6e3e7952d2dfa5233c963eec4be4be4a830b8a5593a2e9e3ce79"
+    }
+  }
+}

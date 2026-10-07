@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.935814Z",
+      "breaking": false,
+      "assets": {
+        "water-wells.parquet": {
+          "sha256": "1964617b9ed5991f9ae72ee3adbc10ded364e9f0ad91985dfec114f79021a6d9",
+          "size_bytes": 11104155,
+          "href": "water-wells/water-wells.parquet",
+          "source_mtime": 1791381200.215063,
+          "mtime": 1791381200.215063,
+          "feature_count": 130946,
+          "schema_fingerprint": "8e07e4fd74a069ce"
+        },
+        "README.md": {
+          "sha256": "306fb433e8975adbc0571168175e6a902bbff17f131c67c19e4680ddd7c6f311",
+          "size_bytes": 2801,
+          "href": "water-wells/README.md",
+          "mtime": 1791386612.75426
+        },
+        "water-wells.thumb.jpg": {
+          "sha256": "ab5f8d7100afc5257b3d44e5bcbea89c877dd7b7f8d8fe578809b2a0b915cc53",
+          "size_bytes": 23845,
+          "href": "water-wells/water-wells.thumb.jpg",
+          "mtime": 1791386641.894065
+        }
+      },
+      "changes": [
+        "water-wells.parquet",
+        "README.md",
+        "water-wells.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.299571Z",
+      "breaking": false,
+      "assets": {
+        "water-wells.parquet": {
+          "sha256": "1964617b9ed5991f9ae72ee3adbc10ded364e9f0ad91985dfec114f79021a6d9",
+          "size_bytes": 11104155,
+          "href": "water-wells/water-wells.parquet",
+          "source_mtime": 1791381200.215063,
+          "mtime": 1791381200.215063,
+          "feature_count": 130946,
+          "schema_fingerprint": "8e07e4fd74a069ce"
+        },
+        "README.md": {
+          "sha256": "306fb433e8975adbc0571168175e6a902bbff17f131c67c19e4680ddd7c6f311",
+          "size_bytes": 2801,
+          "href": "water-wells/README.md",
+          "mtime": 1791386612.75426
+        },
+        "water-wells.thumb.jpg": {
+          "sha256": "ab5f8d7100afc5257b3d44e5bcbea89c877dd7b7f8d8fe578809b2a0b915cc53",
+          "size_bytes": 23845,
+          "href": "water-wells/water-wells.thumb.jpg",
+          "mtime": 1791386641.894065
+        },
+        "water-wells.pmtiles": {
+          "sha256": "3e7a1913043eaa36fb0c87dd267c2315128317d1419d38910b53330f01d8df98",
+          "size_bytes": 72967136,
+          "href": "water-wells/water-wells.pmtiles",
+          "mtime": 1791387296.799009
+        }
+      },
+      "changes": [
+        "water-wells.pmtiles"
+      ]
+    }
+  ]
+}

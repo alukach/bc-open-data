@@ -1,0 +1,355 @@
+{
+  "type": "Collection",
+  "id": "schools",
+  "stac_version": "1.1.0",
+  "description": "1,914 K-12 schools with category, grade level, district and French-language program indicators. Published by Education Analytics Office (Province of British Columbia) as [BC Schools - K-12 with Francophone Indicators](https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./schools.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "schools"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Point",
+  "geoparquet:feature_count": 1914,
+  "table:row_count": 1914,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "CUSTODIAN_ORG_DESCRIPTION",
+      "type": "string",
+      "description": "CUSTODIAN_ORG_DESCRIPTION contains the name or description of the custodial organization (usually Ministry and Branch)"
+    },
+    {
+      "name": "BUSINESS_CATEGORY_CLASS",
+      "type": "string",
+      "description": "BUSINESS_CATEGORY_CLASS designates the category of business, i.e., elementaryAndSecondarySchools"
+    },
+    {
+      "name": "BUSINESS_CATEGORY_DESCRIPTION",
+      "type": "string",
+      "description": "BUSINESS_CATEGORY_DESCRIPTION describes the category of business, i.e., Elementary and secondary schools"
+    },
+    {
+      "name": "OCCUPANT_TYPE_DESCRIPTION",
+      "type": "string",
+      "description": "OCCUPANT_TYPE_DESCRIPTION contains the description of the occupant type, e.g. Hospital"
+    },
+    {
+      "name": "SOURCE_DATA_ID",
+      "type": "string",
+      "description": "SOURCE_DATA_ID is a unique occupant id either supplied by the source data system or produced by GSR, depending on the value of SUPPLIED_SOURCE_ID_IND"
+    },
+    {
+      "name": "SUPPLIED_SOURCE_ID_IND",
+      "type": "string",
+      "description": "SUPPLIED_SOURCE_ID_IND is an indicator of whether the source data id was supplied by the supplier (Y) or DataBC (N)"
+    },
+    {
+      "name": "OCCUPANT_NAME",
+      "type": "string",
+      "description": "OCCUPANT_NAME is a business name that can identify the occupant who provides the BC Government or BC Government related services to public."
+    },
+    {
+      "name": "DESCRIPTION",
+      "type": "string",
+      "description": "DESCRIPTION describes the Occupant in more detail"
+    },
+    {
+      "name": "PHYSICAL_ADDRESS",
+      "type": "string",
+      "description": "PHYSICAL_ADDRESS contains the civic or non-civic address as a single string, structured according to the specification of the Physical Address and Geocoding Standard, e.g., 420 GORGE RD E, VICTORIA, BC."
+    },
+    {
+      "name": "ALIAS_ADDRESS",
+      "type": "string",
+      "description": "ALIAS_ADDRESS contains an address string, not a parsed address. It is the address that will be displayed for presentation purposes, e.g., 32900 Marshall Road, Abbotsford, BC"
+    },
+    {
+      "name": "STREET_ADDRESS",
+      "type": "string",
+      "description": "STREET_ADDRESS is a free form expression of the site descriptor (e.g., unit) and the civic building number / street / street indicator portion of an address, e.g., Unit 1, 123 Main Street East."
+    },
+    {
+      "name": "POSTAL_CODE",
+      "type": "string",
+      "description": "POSTAL_CODE is the Canadian Postal code value associated with the physical address, e.g., V9Z 2K1"
+    },
+    {
+      "name": "LOCALITY",
+      "type": "string",
+      "description": "LOCALITY is the name of the municipality, community, Federal Indian Reserve (IR), subdivision, regional district, indigenous land or natural feature the occupant site is located in, e.g., Victoria, Saanich IR 1, Capital Regional District."
+    },
+    {
+      "name": "CONTACT_PHONE",
+      "type": "string",
+      "description": "CONTACT_PHONE contains the \"general office\" phone number of the Occupant, e.g., 250-555-1234"
+    },
+    {
+      "name": "CONTACT_EMAIL",
+      "type": "string",
+      "description": "CONTACT_EMAIL contains the \"general office\" email address of the Occupant."
+    },
+    {
+      "name": "CONTACT_FAX",
+      "type": "string",
+      "description": "CONTACT_FAX contains the \"general office\" fax number of the Occupant, e.g., 250-555-1234"
+    },
+    {
+      "name": "WEBSITE_URL",
+      "type": "string",
+      "description": "WEBSITE_URL contains the link to the Home page of the Occupant's Website"
+    },
+    {
+      "name": "IMAGE_URL",
+      "type": "string",
+      "description": "IMAGE_URL contains a full URL link to a picture of the Occupant's Location."
+    },
+    {
+      "name": "KEYWORDS",
+      "type": "string",
+      "description": "KEYWORDS contains text strings supplied by the Custodian, to be used for search/query purposes. Keywords are separated by the ; delimiter."
+    },
+    {
+      "name": "DATE_UPDATED",
+      "type": "date32[day]",
+      "description": "DATE_UPDATED contains the date that the Occupant data was updated in the Occupant structure (system-generated)"
+    },
+    {
+      "name": "SITE_GEOCODED_IND",
+      "type": "string",
+      "description": "SITE_GEOCODED_IND contains a Flag/indicator (Y/N) that the Occupant Physical Address has been geo-coded by the DataBC Address Geocoder and the results provide a valid site address, e.g., Y, N"
+    },
+    {
+      "name": "CORE_FRENCH_OFFERED",
+      "type": "string",
+      "description": "CORE_FRENCH_OFFERED identifies whether the school offers a Core French program. Valid values are \"YES\" or \"NO\"."
+    },
+    {
+      "name": "DISTRICT_NAME",
+      "type": "string",
+      "description": "DISTRICT_NAME is the name of the school district, e.g. Southeast Kootenay."
+    },
+    {
+      "name": "DISTRICT_NUMBER",
+      "type": "string",
+      "description": "DISTRICT_NUMBER is a 3 digit code used to identify school district, e.g. 005"
+    },
+    {
+      "name": "EARLY_FRENCH_IMMERSION_OFFERED",
+      "type": "string",
+      "description": "EARLY_FRENCH_IMMERSION_OFFERED identifies whether the school offers an early French Immersion program. Valid values are \"YES\" or \"NO\"."
+    },
+    {
+      "name": "FACILITY_TYPE",
+      "type": "string",
+      "description": "FACILITY_TYPE is the type of school facility, e.g. District Distance Ed"
+    },
+    {
+      "name": "FRANCOPHONE_PROGRAM_OFFERED",
+      "type": "string",
+      "description": "FRANCOPHONE_PROGRAM_OFFERED identifies whether the school offers a Francophone program. Valid values are \"YES\" or \"NO\"."
+    },
+    {
+      "name": "LATE_FRENCH_IMMERSION_OFFERED",
+      "type": "string",
+      "description": "LATE_FRENCH_IMMERSION_OFFERED identifies whether the school offers a late French Immersion program. Valid values are \"YES\" or \"NO\"."
+    },
+    {
+      "name": "SCHOOL_CATEGORY",
+      "type": "string",
+      "description": "SCHOOL_CATEGORY identifies if the school is public, independent, long distance, e.g. BC PUBLIC SCHOOL"
+    },
+    {
+      "name": "SCHOOL_EDUCATION_LEVEL",
+      "type": "string",
+      "description": "SCHOOL_EDUCATION_LEVEL indicates the level of education offered by the school, e.g. ELEMENTARY, SECONDARY."
+    },
+    {
+      "name": "SCHOOL_NUMBER",
+      "type": "string",
+      "description": "SCHOOL_NUMBER is a code assigned to the school for this enrollment period."
+    },
+    {
+      "name": "SCHOOL_YEAR",
+      "type": "string",
+      "description": "SCHOOL_YEAR indicates the enrolment period, e.g. 2012/2013."
+    },
+    {
+      "name": "SEQUENCE_ID",
+      "type": "int32",
+      "description": "SEQUENCE_ID contains a value to distinguish occupant instances. Where a single occupant can have multiple instances (representing different services, for example), this field distinguishes this occupant instance from other instances of the same or different occupants."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -123.1127929,
+    49.2534626,
+    13
+  ],
+  "pmtiles:layers": [
+    "schools"
+  ],
+  "title": "BC Schools - K-12 with Francophone Indicators",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -133.6091357,
+          48.36407280001382,
+          -114.89155190039531,
+          59.92429599971936
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Education Analytics Office, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 8878,
+      "file:checksum": "1220be83208680f4793bc32b795af73ba7cf268b8e8f3a7742e296a5463e3b629994",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "thumbnail": {
+      "href": "./schools.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 16459,
+      "file:checksum": "122006160f52b451af121c15f299fbf9adee8dd2e13c73665c5eb304ee0387f183bc",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "schools": {
+      "href": "./schools.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 169083,
+      "file:checksum": "1220edec4e80e6779c0938b64f11ab2eaa98c0503016468bd9c5f4cdbab4f3ae9c7a",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "schools-tiles": {
+      "href": "./schools.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "schools (vector tiles)",
+      "file:size": 2659638,
+      "file:checksum": "1220799853d6cf7bba1e7c7093237295f1690d20ee4aafad6b9781de64ce3aefb528",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "School category",
+      "file:size": 726,
+      "file:checksum": "1220c986990f36622c1ed5cf39ad5e69f23f1fa4e135f008d58edb7920dae6cea282"
+    },
+    "styles/education-level": {
+      "href": "./styles/education-level.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style"
+      ],
+      "title": "Grade levels",
+      "file:size": 982,
+      "file:checksum": "12207442b01fa036d53aaf1780e94ceea2b52f12c8e4c1198550c5e9ac8baca0bcab"
+    }
+  }
+}

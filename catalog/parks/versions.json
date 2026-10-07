@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:32.013077Z",
+      "breaking": false,
+      "assets": {
+        "parks.parquet": {
+          "sha256": "8b91195a2b69fa3d7c243d6b08ee7696a4790c272c8c46bff04df8389df66249",
+          "size_bytes": 11482933,
+          "href": "parks/parks.parquet",
+          "source_mtime": 1791380748.7727697,
+          "mtime": 1791380748.7727697,
+          "feature_count": 930,
+          "schema_fingerprint": "b8aaeb04539093d3"
+        },
+        "README.md": {
+          "sha256": "94117cef8e466c4095f3307d9b39052a52dcd12ba0214e93085b736ac3738ca1",
+          "size_bytes": 1511,
+          "href": "parks/README.md",
+          "mtime": 1791386612.7466793
+        },
+        "parks.thumb.jpg": {
+          "sha256": "fb90b7853f4ec5cd6019841b346e4fc33ee1f2d53219f5936b0ddb44ea314084",
+          "size_bytes": 16558,
+          "href": "parks/parks.thumb.jpg",
+          "mtime": 1791386640.3024862
+        }
+      },
+      "changes": [
+        "parks.parquet",
+        "README.md",
+        "parks.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.361933Z",
+      "breaking": false,
+      "assets": {
+        "parks.parquet": {
+          "sha256": "8b91195a2b69fa3d7c243d6b08ee7696a4790c272c8c46bff04df8389df66249",
+          "size_bytes": 11482933,
+          "href": "parks/parks.parquet",
+          "source_mtime": 1791380748.7727697,
+          "mtime": 1791380748.7727697,
+          "feature_count": 930,
+          "schema_fingerprint": "b8aaeb04539093d3"
+        },
+        "README.md": {
+          "sha256": "94117cef8e466c4095f3307d9b39052a52dcd12ba0214e93085b736ac3738ca1",
+          "size_bytes": 1511,
+          "href": "parks/README.md",
+          "mtime": 1791386612.7466793
+        },
+        "parks.thumb.jpg": {
+          "sha256": "fb90b7853f4ec5cd6019841b346e4fc33ee1f2d53219f5936b0ddb44ea314084",
+          "size_bytes": 16558,
+          "href": "parks/parks.thumb.jpg",
+          "mtime": 1791386640.3024862
+        },
+        "parks.pmtiles": {
+          "sha256": "bb464c856772b63b6bbbff51c939f6abd44054610efa4747f98cccff459f46a4",
+          "size_bytes": 13302161,
+          "href": "parks/parks.pmtiles",
+          "mtime": 1791387296.798963
+        }
+      },
+      "changes": [
+        "parks.pmtiles"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 8,
+  "name": "Grade levels",
+  "sources": {
+    "schools": {
+      "type": "vector",
+      "url": "pmtiles://../schools.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "schools-circle",
+      "type": "circle",
+      "source": "schools",
+      "source-layer": "schools",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "SCHOOL_EDUCATION_LEVEL"
+          ],
+          "Elementary",
+          "#e41a1c",
+          "Secondary",
+          "#377eb8",
+          "Elementary-Secondary",
+          "#4daf4a",
+          "Elementary Jr. Secondary",
+          "#984ea3",
+          "Middle School",
+          "#ff7f00",
+          "Senior Secondary",
+          "#a65628",
+          "Junior Secondary",
+          "#f781bf",
+          "#b0b0b0"
+        ],
+        "circle-radius": 4,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

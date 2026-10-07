@@ -1,0 +1,23 @@
+title: "Groundwater Wells"
+description: "130,946 groundwater wells registered in the provincial GWELLS registry, with construction, depth, yield and aquifer. Published by Watershed Stewardship and Security (Province of British Columbia) as [Groundwater Wells](https://catalogue.data.gov.bc.ca/dataset/groundwater-wells) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md)."
+
+contact:
+  name: "Anthony Lukach"
+  email: "anthonylukach@gmail.com"
+
+license: "other"
+license_url: "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc"
+attribution: "Contains information licensed under the Open Government Licence \u2013 British Columbia."
+
+providers:
+  - name: "Watershed Stewardship and Security, Province of British Columbia"
+    roles: ["producer", "licensor"]
+    url: "https://catalogue.data.gov.bc.ca/dataset/groundwater-wells"
+  - name: "Anthony Lukach"
+    roles: ["processor", "host"]
+    url: "https://source.coop/alukach/bc-open-data"
+
+keywords: ["British Columbia", "Canada", "groundwater", "gwells", "hydrogeology", "water well", "well"]
+source_url: "https://catalogue.data.gov.bc.ca/dataset/groundwater-wells"
+processing_notes: "Extracted province-wide on 2026-10-07 from the [BC Geographic Warehouse WFS](https://openmaps.gov.bc.ca/geo/pub/wfs) by scripts/extract.sh in [github.com/alukach/bc-open-data](https://github.com/alukach/bc-open-data): pages of 10,000 features sorted by OBJECTID, row count checked against the server's numberMatched. Geometry is kept in the source CRS, EPSG:3005 (BC Albers); the file is spatially sorted with a bbox covering column. Dropped: GeoServer's synthetic `id`, and LATITUDE/LONGITUDE where the geometry carries them. PMTiles by scripts/tile.sh (tippecanoe, zooms 0-13). BCGW table: GW_WATER_WELLS_WRBC_SVW."
+known_issues: "STREET_ADDRESS and PERSON_RESPONSIBLE can identify private individuals; they are kept as the Province publishes them."

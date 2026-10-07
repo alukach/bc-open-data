@@ -1,0 +1,250 @@
+{
+  "type": "Collection",
+  "id": "parks",
+  "stac_version": "1.1.0",
+  "description": "930 BC Parks, ecological reserves and protected areas. Published by BC Parks (Province of British Columbia) as [BC Parks, Ecological Reserves, and Protected Areas](https://catalogue.data.gov.bc.ca/dataset/bc-parks-ecological-reserves-and-protected-areas) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/bc-parks-ecological-reserves-and-protected-areas",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./parks.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "parks"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 930,
+  "table:row_count": 930,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "ADMIN_AREA_SID",
+      "type": "int32"
+    },
+    {
+      "name": "PROTECTED_LANDS_NAME",
+      "type": "string"
+    },
+    {
+      "name": "PROTECTED_LANDS_CODE",
+      "type": "string"
+    },
+    {
+      "name": "PROTECTED_LANDS_DESIGNATION",
+      "type": "string"
+    },
+    {
+      "name": "PARK_CLASS",
+      "type": "string"
+    },
+    {
+      "name": "SURVEYOR_GENERAL_PLAN_NO",
+      "type": "string"
+    },
+    {
+      "name": "ORCS_PRIMARY",
+      "type": "string"
+    },
+    {
+      "name": "ORCS_SECONDARY",
+      "type": "string"
+    },
+    {
+      "name": "ESTABLISHMENT_DATE",
+      "type": "timestamp[ms]"
+    },
+    {
+      "name": "OFFICIAL_AREA_HA",
+      "type": "double"
+    },
+    {
+      "name": "PARK_MANAGEMENT_PLAN_URL",
+      "type": "string"
+    },
+    {
+      "name": "FEATURE_CODE",
+      "type": "string"
+    },
+    {
+      "name": "FEATURE_AREA_SQM",
+      "type": "double"
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double"
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "OBJECTID is a required attribute of feature classes and object classes in a geodatabase."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -129.6166992,
+    52.9486358,
+    13
+  ],
+  "pmtiles:layers": [
+    "parks"
+  ],
+  "title": "BC Parks, Ecological Reserves, and Protected Areas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -139.06131013390285,
+          48.28827897481446,
+          -114.0541490743922,
+          60.00091491024925
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "BC Parks, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/bc-parks-ecological-reserves-and-protected-areas"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "parks": {
+      "href": "./parks.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 11482933,
+      "file:checksum": "12208b91195a2b69fa3d7c243d6b08ee7696a4790c272c8c46bff04df8389df66249",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 4142,
+      "file:checksum": "122041b1d0e3c390a4f930a566f8864bf3fd7f9653924a94b31a589975ecfe3d1265",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "thumbnail": {
+      "href": "./parks.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 69291,
+      "file:checksum": "12204e732afa3b2dcbb7018df6b433fcb02fb755b471df3b417f1728951208f1408e",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "parks-tiles": {
+      "href": "./parks.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "parks (vector tiles)",
+      "file:size": 13302161,
+      "file:checksum": "1220bb464c856772b63b6bbbff51c939f6abd44054610efa4747f98cccff459f46a4",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Designation",
+      "file:size": 985,
+      "file:checksum": "1220369dd81e68d4b582a52c62332498191cab048e527f105366881376a3cae386f5"
+    },
+    "styles/park-class": {
+      "href": "./styles/park-class.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style"
+      ],
+      "title": "Park class",
+      "file:size": 689,
+      "file:checksum": "1220a42d3ee8d63f5e4ec3433e7ef0f6540fcc83005b35fe67697bed3b10fb5384ee"
+    }
+  }
+}

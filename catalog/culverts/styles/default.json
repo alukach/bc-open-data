@@ -1,0 +1,49 @@
+{
+  "version": 8,
+  "name": "Culvert material",
+  "sources": {
+    "culverts": {
+      "type": "vector",
+      "url": "pmtiles://../culverts.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "culverts-circle",
+      "type": "circle",
+      "source": "culverts",
+      "source-layer": "culverts",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "CULVERT_MATERIAL"
+          ],
+          "Galvanized",
+          "#8c510a",
+          "Plastic",
+          "#d8b365",
+          "Concrete",
+          "#5ab4ac",
+          "Other",
+          "#01665e",
+          "Wood",
+          "#c51b7d",
+          "Galvanized Perf Pipe",
+          "#4d9221",
+          "Multiplate",
+          "#f1b6da",
+          "Box",
+          "#35978f",
+          "#b0b0b0"
+        ],
+        "circle-radius": 2.5,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

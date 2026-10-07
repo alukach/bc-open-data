@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.959644Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "b89f494bbc99ca01ae4bf9917f2db81b837c4bdd5eaac095a069a3f5854a1067",
+          "size_bytes": 1501,
+          "href": "wildfire-perimeters/README.md",
+          "mtime": 1791386612.7592604
+        },
+        "wildfire-perimeters.thumb.jpg": {
+          "sha256": "eb08206ab568704418b31281416d1ccc83fd2a2c744de73c2b036fa970e1f0b3",
+          "size_bytes": 23661,
+          "href": "wildfire-perimeters/wildfire-perimeters.thumb.jpg",
+          "mtime": 1791386643.9232244
+        },
+        "wildfire-perimeters.parquet": {
+          "sha256": "a818b31e0c46c871161c959b5ac70c58f46f9354bf301ebc5a9274f2a9b31233",
+          "size_bytes": 31989832,
+          "href": "wildfire-perimeters/wildfire-perimeters.parquet",
+          "source_mtime": 1791380918.7438045,
+          "mtime": 1791380918.7438045,
+          "feature_count": 24751,
+          "schema_fingerprint": "3f7c209240260f56"
+        }
+      },
+      "changes": [
+        "README.md",
+        "wildfire-perimeters.thumb.jpg",
+        "wildfire-perimeters.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.319218Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "b89f494bbc99ca01ae4bf9917f2db81b837c4bdd5eaac095a069a3f5854a1067",
+          "size_bytes": 1501,
+          "href": "wildfire-perimeters/README.md",
+          "mtime": 1791386612.7592604
+        },
+        "wildfire-perimeters.thumb.jpg": {
+          "sha256": "eb08206ab568704418b31281416d1ccc83fd2a2c744de73c2b036fa970e1f0b3",
+          "size_bytes": 23661,
+          "href": "wildfire-perimeters/wildfire-perimeters.thumb.jpg",
+          "mtime": 1791386643.9232244
+        },
+        "wildfire-perimeters.parquet": {
+          "sha256": "a818b31e0c46c871161c959b5ac70c58f46f9354bf301ebc5a9274f2a9b31233",
+          "size_bytes": 31989832,
+          "href": "wildfire-perimeters/wildfire-perimeters.parquet",
+          "source_mtime": 1791380918.7438045,
+          "mtime": 1791380918.7438045,
+          "feature_count": 24751,
+          "schema_fingerprint": "3f7c209240260f56"
+        },
+        "wildfire-perimeters.pmtiles": {
+          "sha256": "ef67ab1eccac8c1d04ee4697703a3f39cd2a6dc0d3c7866748920b6e89fb6789",
+          "size_bytes": 74309711,
+          "href": "wildfire-perimeters/wildfire-perimeters.pmtiles",
+          "mtime": 1791387296.799039
+        }
+      },
+      "changes": [
+        "wildfire-perimeters.pmtiles"
+      ]
+    }
+  ]
+}

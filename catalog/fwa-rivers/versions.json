@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.917802Z",
+      "breaking": false,
+      "assets": {
+        "fwa-rivers.thumb.jpg": {
+          "sha256": "8067ce8383d43bd9d4bd622f6af4174c73882d8318fb4cead7ea203d0f939772",
+          "size_bytes": 21453,
+          "href": "fwa-rivers/fwa-rivers.thumb.jpg",
+          "mtime": 1791386633.3441749
+        },
+        "README.md": {
+          "sha256": "1c5783716d753e1101e704cc9f8ece47d7d62c9ea40115816941520c1deb80e7",
+          "size_bytes": 1811,
+          "href": "fwa-rivers/README.md",
+          "mtime": 1791386612.7342296
+        },
+        "fwa-rivers.parquet": {
+          "sha256": "506d9709893a492f7ff696f29873ac8f904c110f3b346dbdc837fdd2de254b28",
+          "size_bytes": 75703329,
+          "href": "fwa-rivers/fwa-rivers.parquet",
+          "source_mtime": 1791381071.582734,
+          "mtime": 1791381071.582734,
+          "feature_count": 37083,
+          "schema_fingerprint": "610e563b9933a997"
+        }
+      },
+      "changes": [
+        "fwa-rivers.thumb.jpg",
+        "README.md",
+        "fwa-rivers.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.285916Z",
+      "breaking": false,
+      "assets": {
+        "fwa-rivers.thumb.jpg": {
+          "sha256": "8067ce8383d43bd9d4bd622f6af4174c73882d8318fb4cead7ea203d0f939772",
+          "size_bytes": 21453,
+          "href": "fwa-rivers/fwa-rivers.thumb.jpg",
+          "mtime": 1791386633.3441749
+        },
+        "README.md": {
+          "sha256": "1c5783716d753e1101e704cc9f8ece47d7d62c9ea40115816941520c1deb80e7",
+          "size_bytes": 1811,
+          "href": "fwa-rivers/README.md",
+          "mtime": 1791386612.7342296
+        },
+        "fwa-rivers.parquet": {
+          "sha256": "506d9709893a492f7ff696f29873ac8f904c110f3b346dbdc837fdd2de254b28",
+          "size_bytes": 75703329,
+          "href": "fwa-rivers/fwa-rivers.parquet",
+          "source_mtime": 1791381071.582734,
+          "mtime": 1791381071.582734,
+          "feature_count": 37083,
+          "schema_fingerprint": "610e563b9933a997"
+        },
+        "fwa-rivers.pmtiles": {
+          "sha256": "e5401afd110a54a28e10a31c947306d15d911e996e7a28b763918b0a5957602b",
+          "size_bytes": 73507884,
+          "href": "fwa-rivers/fwa-rivers.pmtiles",
+          "mtime": 1791387296.798883
+        }
+      },
+      "changes": [
+        "fwa-rivers.pmtiles"
+      ]
+    }
+  ]
+}

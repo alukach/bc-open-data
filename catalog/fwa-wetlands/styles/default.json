@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Wetlands",
+  "sources": {
+    "fwa-wetlands": {
+      "type": "vector",
+      "url": "pmtiles://../fwa-wetlands.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "fwa-wetlands-fill",
+      "type": "fill",
+      "source": "fwa-wetlands",
+      "source-layer": "fwa-wetlands",
+      "paint": {
+        "fill-color": "#6aa84f",
+        "fill-opacity": 0.75,
+        "fill-outline-color": "#4e8a3a"
+      }
+    }
+  ]
+}

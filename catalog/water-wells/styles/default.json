@@ -1,0 +1,49 @@
+{
+  "version": 8,
+  "name": "Intended water use",
+  "sources": {
+    "water-wells": {
+      "type": "vector",
+      "url": "pmtiles://../water-wells.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "water-wells-circle",
+      "type": "circle",
+      "source": "water-wells",
+      "source-layer": "water-wells",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "INTENDED_WATER_USE"
+          ],
+          "Private Domestic",
+          "#e41a1c",
+          "Unknown Well Use",
+          "#377eb8",
+          "Not Applicable",
+          "#4daf4a",
+          "Commercial and Industrial",
+          "#984ea3",
+          "Water Supply System",
+          "#ff7f00",
+          "Irrigation",
+          "#a65628",
+          "Other",
+          "#f781bf",
+          "Test",
+          "#999999",
+          "#b0b0b0"
+        ],
+        "circle-radius": 3,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.work/
+# Data and derived images live on Source Cooperative; rebuild with scripts/
+*.parquet
+*.pmtiles
+*.thumb.jpg
+# Push credentials/config
+.env

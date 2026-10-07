@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.942983Z",
+      "breaking": false,
+      "assets": {
+        "aquifers.thumb.jpg": {
+          "sha256": "1c5e1d359bbb64e5dff5d479c93950a65108ad6cc517b81df83f24925828e915",
+          "size_bytes": 11379,
+          "href": "aquifers/aquifers.thumb.jpg",
+          "mtime": 1791386629.2289433
+        },
+        "README.md": {
+          "sha256": "a42d208d2d9b610228f855b1c958a937dfce9f831297f3f4d354aff9463febe9",
+          "size_bytes": 1516,
+          "href": "aquifers/README.md",
+          "mtime": 1791386612.7293177
+        },
+        "aquifers.parquet": {
+          "sha256": "bba9dbd16c07fcfe62fb834105e516cee8e0d1b9d86076f5be18fc94c8841cd6",
+          "size_bytes": 7214579,
+          "href": "aquifers/aquifers.parquet",
+          "source_mtime": 1791380767.8906217,
+          "mtime": 1791380767.8906217,
+          "feature_count": 1166,
+          "schema_fingerprint": "2793166ae42467c5"
+        }
+      },
+      "changes": [
+        "aquifers.thumb.jpg",
+        "README.md",
+        "aquifers.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.305913Z",
+      "breaking": false,
+      "assets": {
+        "aquifers.thumb.jpg": {
+          "sha256": "1c5e1d359bbb64e5dff5d479c93950a65108ad6cc517b81df83f24925828e915",
+          "size_bytes": 11379,
+          "href": "aquifers/aquifers.thumb.jpg",
+          "mtime": 1791386629.2289433
+        },
+        "README.md": {
+          "sha256": "a42d208d2d9b610228f855b1c958a937dfce9f831297f3f4d354aff9463febe9",
+          "size_bytes": 1516,
+          "href": "aquifers/README.md",
+          "mtime": 1791386612.7293177
+        },
+        "aquifers.parquet": {
+          "sha256": "bba9dbd16c07fcfe62fb834105e516cee8e0d1b9d86076f5be18fc94c8841cd6",
+          "size_bytes": 7214579,
+          "href": "aquifers/aquifers.parquet",
+          "source_mtime": 1791380767.8906217,
+          "mtime": 1791380767.8906217,
+          "feature_count": 1166,
+          "schema_fingerprint": "2793166ae42467c5"
+        },
+        "aquifers.pmtiles": {
+          "sha256": "1484725a16ffc111d381651281181db69be9d869d4652ab01ab42a9acee1a6cd",
+          "size_bytes": 12667657,
+          "href": "aquifers/aquifers.pmtiles",
+          "mtime": 1791387296.798818
+        }
+      },
+      "changes": [
+        "aquifers.pmtiles"
+      ]
+    }
+  ]
+}

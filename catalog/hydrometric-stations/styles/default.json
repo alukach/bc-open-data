@@ -1,0 +1,41 @@
+{
+  "version": 8,
+  "name": "Operating status",
+  "sources": {
+    "hydrometric-stations": {
+      "type": "vector",
+      "url": "pmtiles://../hydrometric-stations.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "hydrometric-stations-circle",
+      "type": "circle",
+      "source": "hydrometric-stations",
+      "source-layer": "hydrometric-stations",
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "STATION_OPERATING_STATUS"
+          ],
+          "DISCONTINUED",
+          "#b2182b",
+          "ACTIVE-REALTIME",
+          "#ef8a62",
+          "ACTIVE",
+          "#fddbc7",
+          "NA",
+          "#67a9cf",
+          "#b0b0b0"
+        ],
+        "circle-radius": 4,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

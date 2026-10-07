@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.968250Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "5c31d12534b18de98d78a425a2efdc11f19834ca2ec62aff56c2a61025b61481",
+          "size_bytes": 2113,
+          "href": "schools/README.md",
+          "mtime": 1791386612.7516882
+        },
+        "schools.thumb.jpg": {
+          "sha256": "3e10a1db6c75802b440bbd1be47921252bccb557020fae5bd4c9d7132b53e1b9",
+          "size_bytes": 6068,
+          "href": "schools/schools.thumb.jpg",
+          "mtime": 1791386641.6318238
+        },
+        "schools.parquet": {
+          "sha256": "edec4e80e6779c0938b64f11ab2eaa98c0503016468bd9c5f4cdbab4f3ae9c7a",
+          "size_bytes": 169083,
+          "href": "schools/schools.parquet",
+          "source_mtime": 1791386826.4595315,
+          "mtime": 1791386826.4595315,
+          "feature_count": 1914,
+          "schema_fingerprint": "ae2fe86384d1a69b"
+        }
+      },
+      "changes": [
+        "README.md",
+        "schools.thumb.jpg",
+        "schools.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.327235Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "5c31d12534b18de98d78a425a2efdc11f19834ca2ec62aff56c2a61025b61481",
+          "size_bytes": 2113,
+          "href": "schools/README.md",
+          "mtime": 1791386612.7516882
+        },
+        "schools.thumb.jpg": {
+          "sha256": "3e10a1db6c75802b440bbd1be47921252bccb557020fae5bd4c9d7132b53e1b9",
+          "size_bytes": 6068,
+          "href": "schools/schools.thumb.jpg",
+          "mtime": 1791386641.6318238
+        },
+        "schools.parquet": {
+          "sha256": "edec4e80e6779c0938b64f11ab2eaa98c0503016468bd9c5f4cdbab4f3ae9c7a",
+          "size_bytes": 169083,
+          "href": "schools/schools.parquet",
+          "source_mtime": 1791386826.4595315,
+          "mtime": 1791386826.4595315,
+          "feature_count": 1914,
+          "schema_fingerprint": "ae2fe86384d1a69b"
+        },
+        "schools.pmtiles": {
+          "sha256": "799853d6cf7bba1e7c7093237295f1690d20ee4aafad6b9781de64ce3aefb528",
+          "size_bytes": 2659638,
+          "href": "schools/schools.pmtiles",
+          "mtime": 1791387296.798994
+        }
+      },
+      "changes": [
+        "schools.pmtiles"
+      ]
+    }
+  ]
+}

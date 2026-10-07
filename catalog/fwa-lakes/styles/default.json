@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Lakes",
+  "sources": {
+    "fwa-lakes": {
+      "type": "vector",
+      "url": "pmtiles://../fwa-lakes.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "fwa-lakes-fill",
+      "type": "fill",
+      "source": "fwa-lakes",
+      "source-layer": "fwa-lakes",
+      "paint": {
+        "fill-color": "#3a86c8",
+        "fill-opacity": 0.85,
+        "fill-outline-color": "#2b6aa0"
+      }
+    }
+  ]
+}

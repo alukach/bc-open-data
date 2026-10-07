@@ -1,0 +1,290 @@
+{
+  "type": "Collection",
+  "id": "aquifers",
+  "stac_version": "1.1.0",
+  "description": "1,166 mapped and classified aquifers, with material, productivity, vulnerability and demand ratings. Published by Watershed Stewardship and Security (Province of British Columbia) as [Ground Water Aquifers](https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./aquifers.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "aquifers"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 1166,
+  "table:row_count": 1166,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "GW_A_SYSID",
+      "type": "int32",
+      "description": "GW_A_SYSID is a system generated unique identification number"
+    },
+    {
+      "name": "AQUIFER_ID",
+      "type": "int32",
+      "description": "System generated sequential number assigned to the aquifer. It is widely used by ground water administration staff as it is the only consistent unique identifier for a mapped aquifer. It is also commonly referred to as Aquifer Number, e.g. 1100."
+    },
+    {
+      "name": "NAME",
+      "type": "string",
+      "description": "Name assigned for a specific aquifer. Typically derived from geographic names or names in common use, but may also be lithologic or litho-stratigraphic units, e.g. Abbotsford-Sumas, McDougall Creek Deltaic."
+    },
+    {
+      "name": "MAPPING_YEAR",
+      "type": "int32",
+      "description": "The year the aquifer was initially mapped or last updated."
+    },
+    {
+      "name": "LOCATION",
+      "type": "string",
+      "description": "Brief description of the geographic location of the aquifer. The description is usually referenced to a nearby major natural geographic area or community, e.g., Grand Forks."
+    },
+    {
+      "name": "MATERIAL",
+      "type": "string",
+      "description": "Describes the broad grouping of geological material found in the aquifer, i.e., Sand and Gravel, Sand, Gravel, Bedrock"
+    },
+    {
+      "name": "SUBTYPE",
+      "type": "string",
+      "description": "Description that defines how the aquifer was formed geologically (depositional description), e.g., Unconfined sand and gravel - large river system, Confined sand and gravel - glacial, Flat-lying to gently-dipping volcanic bedrock."
+    },
+    {
+      "name": "AQUIFER_DETAILS_URL",
+      "type": "string",
+      "description": "Link to aquifer summary report within the Groundwater Wells and Aquifer (GWELLS) application. The aquifer summary provides the overall desription and history of the aquifer."
+    },
+    {
+      "name": "LITHO_STRATOGRAPHIC_UNIT",
+      "type": "string",
+      "description": "Permeable geologic unit (where available) that comprises the aquifer. It is typically either: the era of deposition, the name of a specific formation, and/or the broad material types, e.g., Paleozoic to Mesozoic Era, Cache Creek Complex, Intrusive Rock."
+    },
+    {
+      "name": "VULNERABILITY",
+      "type": "string",
+      "description": "The aquifer's relative intrinsic vulnerability to impacts from human activities on the land surface. Vulnerability is based on: the type, thickness, and extent of geologic materials above the aquifer, depth to water table (or to top of confined aquifer), and type of aquifer materials, i.e., Low, Moderate, High."
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "string",
+      "description": "The aquifer's productivity which represents an aquifer's ability to transmit and yield groundwater, i.e., Low, Moderate, High."
+    },
+    {
+      "name": "DEMAND",
+      "type": "string",
+      "description": "The level of groundwater use at the time the aquifer was mapped, i.e., High, Moderate, Low."
+    },
+    {
+      "name": "WATER_USE",
+      "type": "string",
+      "description": "The type of known water use of an aquifer at the time the aquifer was mapped. It indicates the variability or diversity of uses of the aquifer water as a supply source, e.g., Domestic, Multiple, Potential Domestic."
+    },
+    {
+      "name": "QUALITY_CONCERN",
+      "type": "string",
+      "description": "Standard terms used to represent the extent of documented concerns of contaminants in the aquifer at the time the aquifer was mapped. i.e. isolated, local, regional, none."
+    },
+    {
+      "name": "NOTES",
+      "type": "string",
+      "description": "Details about the mapped aquifer that the province deems important to maintain such as local knowledge about the aquifer or decisions for changes related to attributes of the mapped aquifer."
+    },
+    {
+      "name": "FEATURE_AREA_SQM",
+      "type": "double",
+      "description": "FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters."
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double",
+      "description": "FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "OBJECTID is a column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -123.2885742,
+    48.8502561,
+    13
+  ],
+  "pmtiles:layers": [
+    "aquifers"
+  ],
+  "title": "Ground Water Aquifers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -132.20144848633245,
+          48.3089158,
+          -114.8244539318539,
+          58.951101
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Watershed Stewardship and Security, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/ground-water-aquifers"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./aquifers.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 19120,
+      "file:checksum": "12207ea87303f5d4dd98d44850ff4f1499361379e23fe02db34540ae59940aa3e960",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 6542,
+      "file:checksum": "1220216456475dd2cfb55629ef5daea1845b82a815974c800a6d18eea2ef5ab5dc24",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "aquifers": {
+      "href": "./aquifers.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 7214579,
+      "file:checksum": "1220bba9dbd16c07fcfe62fb834105e516cee8e0d1b9d86076f5be18fc94c8841cd6",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "aquifers-tiles": {
+      "href": "./aquifers.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "aquifers (vector tiles)",
+      "file:size": 12667657,
+      "file:checksum": "12201484725a16ffc111d381651281181db69be9d869d4652ab01ab42a9acee1a6cd",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Vulnerability to contamination",
+      "file:size": 721,
+      "file:checksum": "122096f24b9d30c6c624e7d065e288b21f3a952fe58427c09f2db120b048f5b764a2"
+    },
+    "styles/material": {
+      "href": "./styles/material.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style"
+      ],
+      "title": "Aquifer material",
+      "file:size": 674,
+      "file:checksum": "1220ed327204df1faa0345213cdf3279989bedb94b3d4f65dbca029142528925e1d8"
+    },
+    "styles/productivity": {
+      "href": "./styles/productivity.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style"
+      ],
+      "title": "Productivity",
+      "file:size": 702,
+      "file:checksum": "1220250fd38af7ebdd80086185e6d10740fae02dbc01c0331f89138b46c04ce6b7b9"
+    }
+  }
+}

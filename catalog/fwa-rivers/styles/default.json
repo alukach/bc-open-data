@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Double-line rivers",
+  "sources": {
+    "fwa-rivers": {
+      "type": "vector",
+      "url": "pmtiles://../fwa-rivers.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "fwa-rivers-fill",
+      "type": "fill",
+      "source": "fwa-rivers",
+      "source-layer": "fwa-rivers",
+      "paint": {
+        "fill-color": "#1f78b4",
+        "fill-opacity": 0.9,
+        "fill-outline-color": "#1f78b4"
+      }
+    }
+  ]
+}

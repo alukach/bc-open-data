@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.925129Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "29765c8fe6b8806c932c3486b223925d2b8f16dc257ee6094f183a62a72d84bc",
+          "size_bytes": 1819,
+          "href": "fwa-wetlands/README.md",
+          "mtime": 1791386612.7366529
+        },
+        "fwa-wetlands.thumb.jpg": {
+          "sha256": "50787d008644b97b7f9ed26ce4d19d8fde9f4a28383ade14c8818f0cccf9153f",
+          "size_bytes": 11969,
+          "href": "fwa-wetlands/fwa-wetlands.thumb.jpg",
+          "mtime": 1791386639.6394227
+        },
+        "fwa-wetlands.parquet": {
+          "sha256": "2e16dfa79caca1ba534348dbae29e41b87baa10890bbc415f867bbc9b8001b2a",
+          "size_bytes": 299626863,
+          "href": "fwa-wetlands/fwa-wetlands.parquet",
+          "source_mtime": 1791387025.9228976,
+          "mtime": 1791387025.9228976,
+          "feature_count": 375178,
+          "schema_fingerprint": "25ec7a0f30b0221e"
+        }
+      },
+      "changes": [
+        "README.md",
+        "fwa-wetlands.thumb.jpg",
+        "fwa-wetlands.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.292504Z",
+      "breaking": false,
+      "assets": {
+        "README.md": {
+          "sha256": "29765c8fe6b8806c932c3486b223925d2b8f16dc257ee6094f183a62a72d84bc",
+          "size_bytes": 1819,
+          "href": "fwa-wetlands/README.md",
+          "mtime": 1791386612.7366529
+        },
+        "fwa-wetlands.thumb.jpg": {
+          "sha256": "50787d008644b97b7f9ed26ce4d19d8fde9f4a28383ade14c8818f0cccf9153f",
+          "size_bytes": 11969,
+          "href": "fwa-wetlands/fwa-wetlands.thumb.jpg",
+          "mtime": 1791386639.6394227
+        },
+        "fwa-wetlands.parquet": {
+          "sha256": "2e16dfa79caca1ba534348dbae29e41b87baa10890bbc415f867bbc9b8001b2a",
+          "size_bytes": 299626863,
+          "href": "fwa-wetlands/fwa-wetlands.parquet",
+          "source_mtime": 1791387025.9228976,
+          "mtime": 1791387025.9228976,
+          "feature_count": 375178,
+          "schema_fingerprint": "25ec7a0f30b0221e"
+        },
+        "fwa-wetlands.pmtiles": {
+          "sha256": "c4beff4d4ea0494a7cabece3bf80a0006601969d83652efe810321f76c52ef7d",
+          "size_bytes": 364606178,
+          "href": "fwa-wetlands/fwa-wetlands.pmtiles",
+          "mtime": 1791387296.7989
+        }
+      },
+      "changes": [
+        "fwa-wetlands.pmtiles"
+      ]
+    }
+  ]
+}

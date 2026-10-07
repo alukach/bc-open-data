@@ -1,0 +1,38 @@
+{
+  "version": 8,
+  "name": "Productivity",
+  "sources": {
+    "aquifers": {
+      "type": "vector",
+      "url": "pmtiles://../aquifers.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  },
+  "layers": [
+    {
+      "id": "aquifers-fill",
+      "type": "fill",
+      "source": "aquifers",
+      "source-layer": "aquifers",
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "PRODUCTIVITY"
+          ],
+          "Moderate",
+          "#1b9e77",
+          "Low",
+          "#d95f02",
+          "High",
+          "#7570b3",
+          "#b0b0b0"
+        ],
+        "fill-opacity": 0.6,
+        "fill-outline-color": "#ffffff"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.910524Z",
+      "breaking": false,
+      "assets": {
+        "fwa-lakes.parquet": {
+          "sha256": "f3a028fbcf4c8a341455a40019766a2eabf377d6445a52a4d40ffc04dba8632f",
+          "size_bytes": 154040518,
+          "href": "fwa-lakes/fwa-lakes.parquet",
+          "source_mtime": 1791386963.0558736,
+          "mtime": 1791386963.0558736,
+          "feature_count": 386025,
+          "schema_fingerprint": "dd1e4aa71e0485fe"
+        },
+        "README.md": {
+          "sha256": "e9573afbafa653289a3339b074d8538811aa0a3ca2e581f97ccb1ac4c091cea3",
+          "size_bytes": 3350,
+          "href": "fwa-lakes/README.md",
+          "mtime": 1791387186.8029432
+        },
+        "fwa-lakes.thumb.jpg": {
+          "sha256": "ad8bc3000fdb111b104235158ddd3011e5ebda01fe659dcdc881c6b4d8c5556b",
+          "size_bytes": 11151,
+          "href": "fwa-lakes/fwa-lakes.thumb.jpg",
+          "mtime": 1791387212.7927387
+        }
+      },
+      "changes": [
+        "fwa-lakes.parquet",
+        "README.md",
+        "fwa-lakes.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.279405Z",
+      "breaking": false,
+      "assets": {
+        "fwa-lakes.parquet": {
+          "sha256": "f3a028fbcf4c8a341455a40019766a2eabf377d6445a52a4d40ffc04dba8632f",
+          "size_bytes": 154040518,
+          "href": "fwa-lakes/fwa-lakes.parquet",
+          "source_mtime": 1791386963.0558736,
+          "mtime": 1791386963.0558736,
+          "feature_count": 386025,
+          "schema_fingerprint": "dd1e4aa71e0485fe"
+        },
+        "README.md": {
+          "sha256": "e9573afbafa653289a3339b074d8538811aa0a3ca2e581f97ccb1ac4c091cea3",
+          "size_bytes": 3350,
+          "href": "fwa-lakes/README.md",
+          "mtime": 1791387186.8029432
+        },
+        "fwa-lakes.thumb.jpg": {
+          "sha256": "ad8bc3000fdb111b104235158ddd3011e5ebda01fe659dcdc881c6b4d8c5556b",
+          "size_bytes": 11151,
+          "href": "fwa-lakes/fwa-lakes.thumb.jpg",
+          "mtime": 1791387212.7927387
+        },
+        "fwa-lakes.pmtiles": {
+          "sha256": "865e1a304d310df6e4e699aa0d0dd4e13fd06353c6cb6ac147e7991ba07224d3",
+          "size_bytes": 317601217,
+          "href": "fwa-lakes/fwa-lakes.pmtiles",
+          "mtime": 1791387296.798866
+        }
+      },
+      "changes": [
+        "fwa-lakes.pmtiles"
+      ]
+    }
+  ]
+}

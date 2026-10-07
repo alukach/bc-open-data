@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.983102Z",
+      "breaking": false,
+      "assets": {
+        "recreation-trails.thumb.jpg": {
+          "sha256": "44f6c5025c7b6d407f7da2c2cd04615bf75fafdd85a9afcf3d9450f97762377d",
+          "size_bytes": 16247,
+          "href": "recreation-trails/recreation-trails.thumb.jpg",
+          "mtime": 1791386641.5811632
+        },
+        "README.md": {
+          "sha256": "cf71a80392be6c90b08776ef3353eade3f0390cca87192b1bbd49b6ab9a46848",
+          "size_bytes": 1913,
+          "href": "recreation-trails/README.md",
+          "mtime": 1791386612.749159
+        },
+        "recreation-trails.parquet": {
+          "sha256": "acf2dd3e5804f63be44def9aa4a6bb2502fd9b7fa47ffe222a22710b965f2a24",
+          "size_bytes": 31248532,
+          "href": "recreation-trails/recreation-trails.parquet",
+          "source_mtime": 1791380855.2212358,
+          "mtime": 1791380855.2212358,
+          "feature_count": 19936,
+          "schema_fingerprint": "080429c48c571f5f"
+        }
+      },
+      "changes": [
+        "recreation-trails.thumb.jpg",
+        "README.md",
+        "recreation-trails.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.341091Z",
+      "breaking": false,
+      "assets": {
+        "recreation-trails.thumb.jpg": {
+          "sha256": "44f6c5025c7b6d407f7da2c2cd04615bf75fafdd85a9afcf3d9450f97762377d",
+          "size_bytes": 16247,
+          "href": "recreation-trails/recreation-trails.thumb.jpg",
+          "mtime": 1791386641.5811632
+        },
+        "README.md": {
+          "sha256": "cf71a80392be6c90b08776ef3353eade3f0390cca87192b1bbd49b6ab9a46848",
+          "size_bytes": 1913,
+          "href": "recreation-trails/README.md",
+          "mtime": 1791386612.749159
+        },
+        "recreation-trails.parquet": {
+          "sha256": "acf2dd3e5804f63be44def9aa4a6bb2502fd9b7fa47ffe222a22710b965f2a24",
+          "size_bytes": 31248532,
+          "href": "recreation-trails/recreation-trails.parquet",
+          "source_mtime": 1791380855.2212358,
+          "mtime": 1791380855.2212358,
+          "feature_count": 19936,
+          "schema_fingerprint": "080429c48c571f5f"
+        },
+        "recreation-trails.pmtiles": {
+          "sha256": "030cffcf8bb26f3da07bfaab7d37d4c3e0307805cb3bf3cfa34b49b678f8818e",
+          "size_bytes": 29298746,
+          "href": "recreation-trails/recreation-trails.pmtiles",
+          "mtime": 1791387296.798979
+        }
+      },
+      "changes": [
+        "recreation-trails.pmtiles"
+      ]
+    }
+  ]
+}

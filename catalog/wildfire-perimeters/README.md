@@ -1,0 +1,86 @@
+# BC Wildfire Fire Perimeters - Historical
+
+24,751 mapped historical wildfire perimeters from the BC Wildfire Service. Published by BC Wildfire Service (Province of British Columbia) as [BC Wildfire Fire Perimeters - Historical](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).
+
+![British Columbia](https://img.shields.io/badge/British_Columbia-blue) ![area burned](https://img.shields.io/badge/area_burned-blue) ![emergency management](https://img.shields.io/badge/emergency_management-blue) ![fire polygon](https://img.shields.io/badge/fire_polygon-blue) ![forest fire](https://img.shields.io/badge/forest_fire-blue)
+
+## Spatial Coverage
+
+- **Bounding Box**: [-136.5886688318544, 48.320559082148456, -114.05414852367234, 60.45377991381205]
+
+## Temporal Coverage
+
+- **Start**: open
+- **End**: ongoing
+
+## Schema
+
+| Column | Type | Description |
+|--------|------|-------------|
+| FIRE_NUMBER | string | FIRE_NUMBER is a composite of the following fields: Zone, Fire ID and Fire Centre. |
+| VERSION_NUMBER | string | VERSION_NUMBER represents the unique versions of the collected data. As additional data is tracked for an incident, new data will be stored in the datastore for the same incident. A new record is added with an incremented version number. |
+| FIRE_YEAR | int32 | FIRE_YEAR represents the fiscal year, April 1 to March 31. |
+| FIRE_CAUSE | string | FIRE_CAUSE is the suspected cause of the fire, e.g., Lightning, Person. |
+| FIRE_LABEL | string | FIRE_LABEL is the concatenation of Fire Number and Fire Year. |
+| FIRE_SIZE_HECTARES | double | FIRE_SIZE_HECTARES indicates the area within the outside perimeter of the incident, in hectares. |
+| SOURCE | string | SOURCE identifies the method used to create the spatial data for load into the datastore. |
+| GPS_TRACK_DATE | string | GPS_TRACK_DATE represents the date the incident was initially tracked via GPS. |
+| LOAD_DATE | timestamp[ms] | LOAD_DATE epresents the date the incident was initially loaded into the datastore. |
+| FIRE_DATE | timestamp[ms] | FIRE_DATE represent the date and time when the incident was reported. |
+| CREATION_METHOD | string | The Creation Method identifies the method used to collect the spatial data. |
+| FEATURE_CODE | string | FEATURE_CODE contains an alphanumeric value based on the Canadian Council of Surveys and Mapping’s (CCSM) system for classification of geographic features, e.g., AR82000110. |
+| OBJECTID | int32 | OBJECTID is a column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE. |
+| SE_ANNO_CAD_DATA | string | SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. |
+| FEATURE_AREA_SQM | double | FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters |
+| FEATURE_LENGTH_M | double | FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters |
+| geometry | binary |  |
+| geometry_bbox | struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null> |  |
+
+## Files
+
+| File | Size | Checksum |
+|------|------|----------|
+| ./README.md | 4.9 KB | 1220669b91e1... |
+| ./wildfire-perimeters.thumb.jpg | 23.1 KB | 1220eb08206a... |
+| ./wildfire-perimeters.parquet | 30.5 MB | 1220a818b31e... |
+| ./wildfire-perimeters.pmtiles | 70.9 MB | 1220ef67ab1e... |
+| ./styles/cause.json | 755 B | 12205a8a6c23... |
+| ./styles/default.json | 778 B | 1220f639647d... |
+
+## Quick Start
+
+```python
+import geopandas as gpd
+
+gdf = gpd.read_parquet("./README.md")
+print(gdf.head())
+```
+
+## STAC Metadata
+
+- **root**: `../catalog.json`
+- **parent**: `../catalog.json`
+
+## Source
+
+[https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical)
+
+## Processing Notes
+
+Extracted province-wide on 2026-10-07 from the [BC Geographic Warehouse WFS](https://openmaps.gov.bc.ca/geo/pub/wfs) by scripts/extract.sh in [github.com/alukach/bc-open-data](https://github.com/alukach/bc-open-data): pages of 10,000 features sorted by OBJECTID, row count checked against the server's numberMatched. Geometry is kept in the source CRS, EPSG:3005 (BC Albers); the file is spatially sorted with a bbox covering column. Dropped: GeoServer's synthetic `id`, and LATITUDE/LONGITUDE where the geometry carries them. PMTiles by scripts/tile.sh (tippecanoe, zooms 0-13). BCGW table: PROT_HISTORICAL_FIRE_POLYS_SP.
+
+## Attribution
+
+Contains information licensed under the Open Government Licence – British Columbia.
+
+## License
+
+[other](https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc)
+
+## Contact
+
+Anthony Lukach <anthonylukach@gmail.com>
+
+---
+
+*Generated by [Portolan](https://github.com/portolan-sdi/portolan-cli) from STAC metadata and .portolan/metadata.yaml*

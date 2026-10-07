@@ -1,0 +1,265 @@
+{
+  "type": "Collection",
+  "id": "wildfire-perimeters",
+  "stac_version": "1.1.0",
+  "description": "24,751 mapped historical wildfire perimeters from the BC Wildfire Service. Published by BC Wildfire Service (Province of British Columbia) as [BC Wildfire Fire Perimeters - Historical](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./wildfire-perimeters.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "wildfire-perimeters"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 24751,
+  "table:row_count": 24751,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "FIRE_NUMBER",
+      "type": "string",
+      "description": "FIRE_NUMBER is a composite of the following fields: Zone, Fire ID and Fire Centre."
+    },
+    {
+      "name": "VERSION_NUMBER",
+      "type": "string",
+      "description": "VERSION_NUMBER represents the unique versions of the collected data. As additional data is tracked for an incident, new data will be stored in the datastore for the same incident. A new record is added with an incremented version number."
+    },
+    {
+      "name": "FIRE_YEAR",
+      "type": "int32",
+      "description": "FIRE_YEAR represents the fiscal year, April 1 to March 31."
+    },
+    {
+      "name": "FIRE_CAUSE",
+      "type": "string",
+      "description": "FIRE_CAUSE is the suspected cause of the fire, e.g., Lightning, Person."
+    },
+    {
+      "name": "FIRE_LABEL",
+      "type": "string",
+      "description": "FIRE_LABEL is the concatenation of Fire Number and Fire Year."
+    },
+    {
+      "name": "FIRE_SIZE_HECTARES",
+      "type": "double",
+      "description": "FIRE_SIZE_HECTARES indicates the area within the outside perimeter of the incident, in hectares."
+    },
+    {
+      "name": "SOURCE",
+      "type": "string",
+      "description": "SOURCE identifies the method used to create the spatial data for load into the datastore."
+    },
+    {
+      "name": "GPS_TRACK_DATE",
+      "type": "string",
+      "description": "GPS_TRACK_DATE represents the date the incident was initially tracked via GPS."
+    },
+    {
+      "name": "LOAD_DATE",
+      "type": "timestamp[ms]",
+      "description": "LOAD_DATE epresents the date the incident was initially loaded into the datastore."
+    },
+    {
+      "name": "FIRE_DATE",
+      "type": "timestamp[ms]",
+      "description": "FIRE_DATE represent the date and time when the incident was reported."
+    },
+    {
+      "name": "CREATION_METHOD",
+      "type": "string",
+      "description": "The Creation Method identifies the method used to collect the spatial data."
+    },
+    {
+      "name": "FEATURE_CODE",
+      "type": "string",
+      "description": "FEATURE_CODE contains an alphanumeric value based on the Canadian Council of Surveys and Mapping\u2019s (CCSM) system for classification of geographic features, e.g., AR82000110."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "OBJECTID is a column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "FEATURE_AREA_SQM",
+      "type": "double",
+      "description": "FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters"
+    },
+    {
+      "name": "FEATURE_LENGTH_M",
+      "type": "double",
+      "description": "FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -133.6596679,
+    59.8337733,
+    13
+  ],
+  "pmtiles:layers": [
+    "wildfire-perimeters"
+  ],
+  "title": "BC Wildfire Fire Perimeters - Historical",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -136.5886688318544,
+          48.320559082148456,
+          -114.05414852367234,
+          60.45377991381205
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "BC Wildfire Service, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 5102,
+      "file:checksum": "1220457dd6536e5b04a11d6b00b7662a4e5bd0658eee5958bb4bb28367f3e24fbc93",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "thumbnail": {
+      "href": "./wildfire-perimeters.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 50180,
+      "file:checksum": "12202e218d991bd5eadf53861e38c4e2eeec84b5e13d9081d7f196930ae32a319802",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "wildfire-perimeters": {
+      "href": "./wildfire-perimeters.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 31989832,
+      "file:checksum": "1220a818b31e0c46c871161c959b5ac70c58f46f9354bf301ebc5a9274f2a9b31233",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "wildfire-perimeters-tiles": {
+      "href": "./wildfire-perimeters.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "wildfire-perimeters (vector tiles)",
+      "file:size": 74309711,
+      "file:checksum": "1220ef67ab1eccac8c1d04ee4697703a3f39cd2a6dc0d3c7866748920b6e89fb6789",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/cause": {
+      "href": "./styles/cause.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style"
+      ],
+      "title": "Cause",
+      "file:size": 755,
+      "file:checksum": "12205a8a6c239d6a1079b509f870c6baf77d58cc365a7191704ced125c3d458f605b"
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Fire year",
+      "file:size": 778,
+      "file:checksum": "1220f639647d6ac35a4fdcc1a93cddaa2c2d907043dcf61522dec95b5e3a8567ecd9"
+    }
+  }
+}

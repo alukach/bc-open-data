@@ -1,0 +1,270 @@
+{
+  "type": "Collection",
+  "id": "culverts",
+  "stac_version": "1.1.0",
+  "description": "186,427 culverts on Ministry of Transportation roads, with material, size, installation date and fish-passage attributes. Published by Construction and Maintenance (Province of British Columbia) as [Ministry of Transportation (MOT) Culverts](https://catalogue.data.gov.bc.ca/dataset/ministry-of-transportation-mot-culverts) in the BC Data Catalogue; this is a full province-wide mirror. Query recipes and field notes are in [AGENTS.md](AGENTS.md).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "license",
+      "href": "https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data/open-government-licence-bc",
+      "title": "License"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalogue.data.gov.bc.ca/dataset/ministry-of-transportation-mot-culverts",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "British Columbia Open Data"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./culverts.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "culverts"
+      ]
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-10-07T15:35:04Z",
+  "geoparquet:geometry_type": "Point",
+  "geoparquet:feature_count": 186427,
+  "table:row_count": 186427,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "CULVERT_ID",
+      "type": "int32",
+      "description": "CULVERT ID is a system generated identifier to ensure row uniqueness. This is a primary key field."
+    },
+    {
+      "name": "CHRIS_CULVERT_ID",
+      "type": "string",
+      "description": "CHRIS CULVERT ID contains the identifier of the culvert inventory item derived by the CHRIS application. E.g., 2455305"
+    },
+    {
+      "name": "ADMIN_UNIT_CODE",
+      "type": "string",
+      "description": "ADMIN UNIT CODE contains the MoT Service Area identifier. There are 28 service areas in MoT's jurisdiction. Each Service Area represents a geographic area within the province. E.g., 13"
+    },
+    {
+      "name": "ADMIN_UNIT_NAME",
+      "type": "string",
+      "description": "ADMIN UNIT NAME contains the MoT Service Area Name identifier."
+    },
+    {
+      "name": "CROSS_SECTION_POSITION",
+      "type": "string",
+      "description": "CROSS SECTION POSITION contains the cross sectional position of the culvert in relationship to the road, E.g., Ditch - Left, Right of Way - Left, Shoulder - Left etc."
+    },
+    {
+      "name": "CULVERT_TYPE",
+      "type": "string",
+      "description": "CULVERT TYPE contains a physical description of the type of culvert, E.g., down drain, entrance, roadway etc."
+    },
+    {
+      "name": "CULVERT_DIAMETER",
+      "type": "int32",
+      "description": "CULVERT DIAMETER contains the physical measure of the diameter of the culvert in millimetres. E.g., 100, 2999, etc."
+    },
+    {
+      "name": "CULVERT_MATERIAL",
+      "type": "string",
+      "description": "CULVERT MATERIAL contains a physical description of the type of material the culvert is made of. E.g., Concrete, Galvanized, Plastic etc."
+    },
+    {
+      "name": "CONFINED_SPACE_IND",
+      "type": "string",
+      "description": "CONFINED SPACE IND indicates whether the Culvert is enclosed or partially enclosed, not designed for human occupancy, and large enough so the worker can enter e.g., Yes or No"
+    },
+    {
+      "name": "INSTALLATION_DATE",
+      "type": "timestamp[ms]",
+      "description": "INSTALLATION DATE indicates the date that the culvert was installed (YYYY-MM-DD)."
+    },
+    {
+      "name": "FISH_SENSITIVE_CODE",
+      "type": "string",
+      "description": "FISH SENSITIVE CODE indicates whether a Culvert contains fish bearing water or not. e.g., Yes, No or Unknown"
+    },
+    {
+      "name": "FISH_PASSAGE_TYPE",
+      "type": "string",
+      "description": "FISH PASSAGE TYPE contains a physical description of the fish passage type, E.g., bottomless, baffle, fish ladder etc."
+    },
+    {
+      "name": "GRATE_CODE",
+      "type": "string",
+      "description": "GRATE CODE indicates whether a culvert has a grate or not. e.g., Yes, No or Unknown"
+    },
+    {
+      "name": "FLAP_GRATE_CODE",
+      "type": "string",
+      "description": "FLAP GRATE CODE indicates whether a culvert has a flap grate or not. e.g., Yes, No or Unknown"
+    },
+    {
+      "name": "CHRIS_ANCHOR_SECTION_ID",
+      "type": "int32",
+      "description": "CHRIS ANCHOR SECTON ID contains the CHRIS application internal unique identifier for the anchor section segment. E.g., 2777363"
+    },
+    {
+      "name": "EVENT_LOCATION",
+      "type": "double",
+      "description": "EVENT LOCATION contains the Measure for the Culvert along the Anchor Section. Measures are in Kilometers. e.g., 42.200"
+    },
+    {
+      "name": "HIGHWAY_NUMBER",
+      "type": "string",
+      "description": "HIGHWAY NUMBER is the MoT Numbered Route identifier only populated when the culvert is located on a MoT Numbered route. E.g., 99 If the culvert is not on a numbered route the field is blank."
+    },
+    {
+      "name": "OBJECTID",
+      "type": "int32",
+      "description": "OBJECTID is a required attribute of feature classes and object classes in a geodatabase."
+    },
+    {
+      "name": "SE_ANNO_CAD_DATA",
+      "type": "string",
+      "description": "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type."
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 13,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -123.552246,
+    49.3966729,
+    13
+  ],
+  "pmtiles:layers": [
+    "culverts"
+  ],
+  "title": "Ministry of Transportation (MOT) Culverts",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -133.80811990818677,
+          48.3288435,
+          -114.6792192471381,
+          59.999770105790645
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Construction and Maintenance, Province of British Columbia",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://catalogue.data.gov.bc.ca/dataset/ministry-of-transportation-mot-culverts"
+    },
+    {
+      "name": "Anthony Lukach",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://source.coop/alukach/bc-open-data"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./culverts.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 43325,
+      "file:checksum": "12202802f40b605f0c683cf8d846487f432e83c5b252e250a39f083a40ba03de2c93",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "documentation": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "file:size": 5998,
+      "file:checksum": "122063c41074c5df32df4cfa7ad1b428da945b642021f077cebc49a0bdb9e0a19105",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "culverts": {
+      "href": "./culverts.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 9270832,
+      "file:checksum": "12209b0bd984052faa401e4854d4a07fb895742d34d3c76e824b6b4980d00aad757b",
+      "proj:code": "EPSG:3005",
+      "roles": [
+        "data"
+      ]
+    },
+    "culverts-tiles": {
+      "href": "./culverts.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "culverts (vector tiles)",
+      "file:size": 49742116,
+      "file:checksum": "12202a1c572b0ede55eff5a66791c936e0e3f70014a13c28730a85be46070edb1022",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "title": "Culvert material",
+      "file:size": 981,
+      "file:checksum": "1220ba0c27c7d1e0e0d211a004b5c944fa0015b03fbafa67a6a27b19fb464b0d55c9"
+    }
+  }
+}

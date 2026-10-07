@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-10-07T15:34:31.990491Z",
+      "breaking": false,
+      "assets": {
+        "culverts.thumb.jpg": {
+          "sha256": "0452e6fcf91de1c9184b6a0cf26518feff1d3b5bae5eaf1986afc3eee69ff4a9",
+          "size_bytes": 19238,
+          "href": "culverts/culverts.thumb.jpg",
+          "mtime": 1791386629.6359088
+        },
+        "README.md": {
+          "sha256": "ade3f857da3075e6e1531c88f08f54c792def164a49406c2b5e5090ae0cacbca",
+          "size_bytes": 1599,
+          "href": "culverts/README.md",
+          "mtime": 1791386612.7318156
+        },
+        "culverts.parquet": {
+          "sha256": "9b0bd984052faa401e4854d4a07fb895742d34d3c76e824b6b4980d00aad757b",
+          "size_bytes": 9270832,
+          "href": "culverts/culverts.parquet",
+          "source_mtime": 1791381279.6601145,
+          "mtime": 1791381279.6601145,
+          "feature_count": 186427,
+          "schema_fingerprint": "1c3c4c32d1e9c66d"
+        }
+      },
+      "changes": [
+        "culverts.thumb.jpg",
+        "README.md",
+        "culverts.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-10-07T15:35:04.348125Z",
+      "breaking": false,
+      "assets": {
+        "culverts.thumb.jpg": {
+          "sha256": "0452e6fcf91de1c9184b6a0cf26518feff1d3b5bae5eaf1986afc3eee69ff4a9",
+          "size_bytes": 19238,
+          "href": "culverts/culverts.thumb.jpg",
+          "mtime": 1791386629.6359088
+        },
+        "README.md": {
+          "sha256": "ade3f857da3075e6e1531c88f08f54c792def164a49406c2b5e5090ae0cacbca",
+          "size_bytes": 1599,
+          "href": "culverts/README.md",
+          "mtime": 1791386612.7318156
+        },
+        "culverts.parquet": {
+          "sha256": "9b0bd984052faa401e4854d4a07fb895742d34d3c76e824b6b4980d00aad757b",
+          "size_bytes": 9270832,
+          "href": "culverts/culverts.parquet",
+          "source_mtime": 1791381279.6601145,
+          "mtime": 1791381279.6601145,
+          "feature_count": 186427,
+          "schema_fingerprint": "1c3c4c32d1e9c66d"
+        },
+        "culverts.pmtiles": {
+          "sha256": "2a1c572b0ede55eff5a66791c936e0e3f70014a13c28730a85be46070edb1022",
+          "size_bytes": 49742116,
+          "href": "culverts/culverts.pmtiles",
+          "mtime": 1791387296.798849
+        }
+      },
+      "changes": [
+        "culverts.pmtiles"
+      ]
+    }
+  ]
+}
